@@ -1,0 +1,977 @@
+{
+  "auth": {
+    "ctaLogin": "Enviarme un enlace de inicio de sesión",
+    "ctaSignup": "Enviarme mi enlace de prueba",
+    "emailLabel": "Dirección de correo electrónico",
+    "errorGeneric": "Algo salió mal. Inténtalo de nuevo.",
+    "errorSend": "Hubo un problema al enviar el enlace. Inténtalo de nuevo.",
+    "legal": "Sin contraseñas que recordar ni restablecer. Al continuar, aceptas los Términos de servicio y la Política de privacidad.",
+    "loginSub": "Ingresa el correo electrónico con el que te registraste y te enviaremos un enlace de inicio de sesión.",
+    "loginTitle": "Bienvenido de nuevo",
+    "sending": "Enviando…",
+    "sent": "Enlace enviado a {email}. Ábrelo en cualquier dispositivo para {finish}.",
+    "sentFinishLogin": "iniciar sesión",
+    "sentFinishSignup": "terminar de crear tu cuenta",
+    "signupSub": "Ingresa tu correo electrónico para crear tu cuenta. Tu {trial} empieza en el siguiente paso — no se requiere tarjeta de crédito.",
+    "signupTitle": "Inicia tu prueba gratuita",
+    "verified": "Revisa tu correo — tu enlace de inicio de sesión está en camino. Caduca en 24 horas."
+  },
+  "billing": {
+    "accessDisabled": "Acceso desactivado",
+    "accessEnabled": "Acceso habilitado",
+    "manageCancel": "Gestionar método de pago / cancelar",
+    "needsSubscription": "Necesitas una suscripción activa (o prueba) para usar el panel. Inicia tu prueba gratuita abajo — no se requiere tarjeta de crédito.",
+    "nextBilling": "Próxima fecha de facturación: {date} ({price}).",
+    "opening": "Abriendo…",
+    "redirecting": "Redirigiendo a Stripe…",
+    "status": "Estado",
+    "statusActive": "Activa",
+    "statusCanceled": "Cancelada",
+    "statusNone": "Sin suscripción",
+    "statusPastDue": "Pago vencido",
+    "statusTrialing": "Prueba gratuita",
+    "statusUnpaid": "Sin pagar",
+    "stripeNote": "La facturación la gestiona Stripe de forma segura. Nunca vemos tu número de tarjeta. Cancela cuando quieras desde esta página.",
+    "title": "Facturación",
+    "trialEnds": "Tu prueba gratuita termina el {date}. No se cobra nada a menos que añadas un método de pago — si no haces nada, el acceso simplemente termina.",
+    "startTrial": "Empieza gratis — no se requiere tarjeta de crédito",
+    "addPaymentBefore": "Añade un método de pago antes del {date} para mantener tu acceso.",
+    "addPayment": "Añadir un método de pago",
+    "trialCardNote": "Añade una tarjeta antes de que termine tu prueba y la facturación de {price} empezará solo después de la prueba. Cancela cuando quieras y no pagas nada.",
+    "refundCta": "Solicitar un reembolso"
+  },
+  "contractBuilder": {
+    "additionalTerms": "Términos adicionales",
+    "additionalTermsPlaceholder": "Cualquier otro acuerdo con el vendedor…",
+    "assignmentFee": "Cargo por cesión — divulgado al vendedor (USD)",
+    "assignmentFeePlaceholder": "p. ej. 10000",
+    "cancel": "Cancelar",
+    "closingDate": "Fecha de cierre",
+    "createDraft": "Crear borrador",
+    "draftNotice": "Solo borrador — no es asesoría legal.",
+    "earnestMoney": "Depósito de garantía (USD)",
+    "genericNotice": "Esto genera una plantilla inicial neutra para cualquier estado. Un abogado de bienes raíces con licencia en el estado de la propiedad debe revisarla antes de que alguien la firme, según los requisitos de wholesale de ese estado.",
+    "hawaiiNotice": "Esto genera una plantilla inicial con divulgaciones de wholesale apropiadas para Hawái. Un abogado con licencia en Hawái debe revisarla antes de que alguien la firme.",
+    "inspectionDays": "Período de inspección (días)",
+    "linkLead": "Vincular al lead (opcional)",
+    "noLink": "— sin vínculo —",
+    "propertyAddress": "Dirección de la propiedad *",
+    "purchasePrice": "Precio de compra (USD) *",
+    "saveChanges": "Guardar cambios",
+    "saving": "Guardando…",
+    "sellerName": "Nombre legal completo del vendedor *",
+    "templateGenericDesc": "Lenguaje neutro para cualquier estado. Un abogado local debe revisarla según las reglas de tu estado.",
+    "templateGenericName": "Genérica (otros estados)",
+    "templateHawaiiDesc": "Lenguaje de divulgación de wholesale y cesión apropiado para Hawái.",
+    "templateHawaiiName": "Hawái",
+    "templateLabel": "Plantilla de contrato",
+    "tmk": "TMK"
+  },
+  "dashboard": {
+    "contracts": {
+      "delete": "Eliminar",
+      "deleteConfirm": "¿Eliminar este borrador de contrato?",
+      "edit": "Editar",
+      "empty": "Aún no hay borradores de contrato. Investiga un lead y luego genera su contrato de cesión aquí.",
+      "emptyGuide": "Cómo funcionan los contratos",
+      "fee": "Cargo",
+      "modalEdit": "Editar borrador de contrato",
+      "modalNew": "Nuevo borrador de contrato",
+      "new": "+ Nuevo borrador de contrato",
+      "previewPrint": "Vista previa e imprimir",
+      "seller": "Vendedor",
+      "templateGeneric": "Genérica",
+      "templateHawaii": "Hawái",
+      "attorneyNoteStrong": "Revisión del abogado, a un clic.",
+      "attorneyNote": "Violation Scout te conecta con un abogado de bienes raíces de Hawái para revisar tu contrato — solicítalo en cualquier borrador. Los borradores son borradores hasta que se revisan.",
+      "requestReview": "Solicitar revisión del abogado",
+      "reviewRequested": "Revisión solicitada",
+      "reviewModalTitle": "Solicitar revisión del abogado",
+      "reviewModalBody": "Esto envía tu borrador a {attorney} y te presenta como un cliente potencial. El abogado se comunicará contigo directamente para revisarlo.",
+      "reviewModalNote": "No existe una relación abogado-cliente hasta que el abogado acepte tu solicitud. El abogado te factura directamente — los honorarios de revisión no están incluidos en tu suscripción.",
+      "reviewConfirm": "Enviar solicitud",
+      "reviewCancel": "Cancelar",
+      "reviewResend": "reenviar",
+      "reviewResendTitle": "¿Enviar la solicitud de nuevo?",
+      "reviewResendBody": "La revisión ya se solicitó el {date}. Volver a enviar le manda al abogado la versión actual de este borrador.",
+      "reviewResendConfirm": "Enviar de nuevo",
+      "reviewSending": "Enviando…",
+      "reviewErrorFallback": "No se pudo enviar la solicitud. Inténtalo de nuevo."
+    },
+    "leads": {
+      "add": "+ Agregar propiedad"
+    },
+    "map": {
+      "empty": "Aún no hay pins — toca el mapa para registrar tu primera propiedad.",
+      "emptyGuide": "Cómo funciona el registro en el mapa",
+      "hint": "Haz clic en cualquier parte del mapa para colocar un pin y registrar la propiedad. Haz clic en un pin para abrir su lista de investigación.",
+      "loading": "Cargando el mapa…"
+    },
+    "propertyModal": {
+      "add": "Agregar propiedad",
+      "edit": "Editar lead",
+      "log": "Registrar esta propiedad"
+    },
+    "research": {
+      "empty": "Agrega un lead primero —",
+      "emptyGuide": "cómo funciona la investigación",
+      "selectGuide": "Guía de investigación",
+      "selectLead": "Selecciona un lead",
+      "selectPrompt": "Selecciona un lead para trabajar su lista de investigación.",
+      "stepsDone": "{done}/{total} pasos completados"
+    },
+    "saveFailed": "No se pudo guardar",
+    "tabs": {
+      "contracts": "Contratos ({count})",
+      "leads": "Leads ({count})",
+      "map": "Mapa",
+      "research": "Investigación"
+    }
+  },
+  "footer": {
+    "disclaimer": "Esta herramienta ofrece información general y plantillas de documentos con fines educativos. No es asesoría legal, no es un bufete de abogados y no es una correduría de bienes raíces. Las reglas de wholesale varían por estado — un abogado con licencia en Hawái debe revisar cualquier contrato antes de que alguien lo firme.",
+    "helpCenter": "Centro de ayuda",
+    "rights": "© {year} {productName}. Todos los derechos reservados.",
+    "guides": "Guías"
+  },
+  "help": {
+    "causes": "Causas probables",
+    "clear": "Limpiar",
+    "contactSub": "{promise} Para preguntas de facturación, el correo electrónico de tu cuenta nos ayuda a encontrarte más rápido.",
+    "contactSupport": "Contactar soporte",
+    "contactTitle": "Contactar soporte",
+    "contactWhen": "Cuándo contactar soporte",
+    "fixGuide": "Guía de solución",
+    "kicker": "Centro de ayuda",
+    "noResults": "Sin coincidencias. Prueba otras palabras — p. ej. «prueba», «imprimir» o «iniciar sesión».",
+    "results": "{count, plural, one {# resultado} other {# resultados}} para «{query}»",
+    "searchAria": "Buscar en el centro de ayuda",
+    "searchPlaceholder": "Busca en el centro de ayuda — p. ej. «cancelar suscripción», «enlace mágico», «imprimir contrato»…",
+    "stepsTitle": "Arréglalo — en orden",
+    "stillStuck": "¿Sigues atascado?",
+    "sub": "Busca en las guías a continuación o explora por tema. La mayoría de los problemas se resuelven con la sección de solución de problemas — si no, el formulario de contacto al final llega a una persona.",
+    "symptoms": "Síntomas",
+    "title": "¿Cómo podemos ayudarte?",
+    "topics": [
+      {
+        "blurb": "Qué es Violation Scout y cómo empezar.",
+        "id": "getting-started",
+        "items": [
+          {
+            "a": "Violation Scout es una herramienta de leads de driving-for-dollars para mayoristas de bienes raíces: marca propiedades deterioradas en un mapa, registra presuntas infracciones al código, investiga a los propietarios a través de registros públicos oficiales y genera borradores de contratos de cesión de wholesale — todo en un solo lugar. Es Hawái primero (el flujo de investigación y la plantilla de contrato usan por defecto los registros de Honolulu y las divulgaciones de Hawái), pero cualquier persona en el mundo puede suscribirse y usarla.",
+            "q": "¿Qué es Violation Scout?"
+          },
+          {
+            "a": "Regístrate con tu correo electrónico y haz clic en el enlace mágico de inicio de sesión que te enviamos. Luego, en la página de Facturación, haz clic en «Empieza gratis» — tu prueba de 14 días empieza de inmediato, sin necesidad de tarjeta de crédito. Unos 3 días antes de que termine la prueba te enviaremos un recordatorio por correo; añade un método de pago desde la página de Facturación antes de que expire la prueba para mantener tu acceso. Si no haces nada, tu acceso termina automáticamente y nunca se te cobra.",
+            "q": "¿Cómo inicio mi prueba gratuita?"
+          },
+          {
+            "a": "No. Violation Scout funciona en cualquier navegador web moderno y está diseñado para ser amigable con el teléfono, así puedes registrar propiedades desde el campo en tu teléfono sin instalar nada.",
+            "q": "¿Necesito instalar una app?"
+          },
+          {
+            "a": "Sí. El mapa, el registro de leads y los contratos funcionan en todo el mundo — el mapa comienza en Oʻahu pero puedes moverlo y acercarlo a cualquier mercado. La lista de investigación usa por defecto los registros públicos de la Ciudad y el Condado de Honolulu, pero en Panel → Configuración puedes cambiar a una región Personalizada y dirigir la lista a los sitios del tasador de tu condado y de cumplimiento de códigos. El generador de contratos también ofrece una plantilla Genérica con lenguaje neutro para usar fuera de Hawái.",
+            "q": "¿Funciona fuera de Hawái?"
+          },
+          {
+            "a": "No. Violation Scout ofrece información general y plantillas de documentos con fines educativos. Las reglas de wholesale varían por estado. En Hawái, comercializa tu interés contractual/equitativo (no una propiedad que no posees), usa contratos asignables con divulgación clara, y haz que un abogado con licencia en Hawái revise cualquier contrato antes de que alguien lo firme.",
+            "q": "¿Usar esta app es lo mismo que recibir asesoría legal?"
+          },
+          {
+            "a": "La interfaz está disponible en inglés, español (Español) y tagalo. Cambia de idioma en cualquier momento desde el menú en la navegación superior — tu elección se recuerda. Los documentos de contrato generados permanecen en inglés, ya que es el idioma en el que se revisarían y harían cumplir.",
+            "q": "¿Qué idiomas admite la app?"
+          }
+        ],
+        "title": "Primeros pasos"
+      },
+      {
+        "blurb": "Colocar pins y capturar leads en el campo.",
+        "id": "map-logging",
+        "items": [
+          {
+            "a": "Abre la pestaña Mapa y haz clic (o toca) en cualquier parte del mapa para colocar un pin. Se abre un formulario — ingresa la dirección, tus notas de deterioro, cualquier presunta infracción y una prioridad, luego guarda. El pin aparece en el mapa y el lead se agrega a tu registro.",
+            "q": "¿Cómo registro una propiedad desde el mapa?"
+          },
+          {
+            "a": "No. El mapa usa mosaicos gratuitos de OpenStreetMap a través de Leaflet, así que no hay nada que configurar y ninguna clave que pagar.",
+            "q": "¿Necesito una clave API de Google Maps?"
+          },
+          {
+            "a": "Los colores de los pins siguen el estado del lead: Nuevo (ámbar), Investigando (azul), Contactado (morado), Oferta hecha (naranja), Bajo contrato (verde), Cedido (verde oscuro), Descartado (gris). Cambia el estado de un lead en el registro de leads y su color de pin se actualiza automáticamente.",
+            "q": "¿Qué significan los colores de los pins?"
+          },
+          {
+            "a": "Sí — el mapa y el formulario de registro están hechos para teléfonos. Por seguridad, que un pasajero registre las propiedades o detén el auto antes de tocar el mapa.",
+            "q": "¿Puedo usar el mapa en mi teléfono mientras hago driving for dollars?"
+          },
+          {
+            "a": "Consulta la guía de solución de problemas «Mosaicos del mapa no cargan» más abajo — explica paso a paso las causas usuales (conexión, bloqueadores de anuncios, mosaicos en caché).",
+            "q": "El mapa está en blanco o los mosaicos no cargan. ¿Qué hago?"
+          }
+        ],
+        "title": "Mapa y registro de propiedades"
+      },
+      {
+        "blurb": "Gestionar, ordenar y exportar tus leads.",
+        "id": "lead-log",
+        "items": [
+          {
+            "a": "Lead nuevo (recién registrado) → Investigando (trabajando la lista) → Contactado (propietario localizado) → Oferta hecha → Bajo contrato → Cedido (contrato transferido a un comprador). Marca un lead como Descartado cuando ya no valga la pena seguirlo. Los estados determinan los colores de los pins en el mapa.",
+            "q": "¿Qué significan los estados de los leads?"
+          },
+          {
+            "a": "Las prioridades (baja / media / alta) las defines tú — por ejemplo, alta para propiedades visiblemente vacías o muy deterioradas que quieres investigar primero. No cambian el comportamiento de la app; te ayudan a ordenar tu atención.",
+            "q": "¿Cómo debo usar las prioridades?"
+          },
+          {
+            "a": "Sí. En la pestaña Leads, haz clic en «Exportar CSV» para descargar todos tus leads como un archivo CSV, que se abre en Excel o Google Sheets.",
+            "q": "¿Puedo exportar mis leads a una hoja de cálculo?"
+          },
+          {
+            "a": "Sí — usa las acciones Editar y Eliminar en el registro de leads. Eliminar es permanente y no se puede deshacer, así que la app pide confirmación primero.",
+            "q": "¿Puedo editar o eliminar un lead?"
+          },
+          {
+            "a": "Consulta la guía de solución de problemas «Datos registrados no aparecen» más abajo.",
+            "q": "Guardé un lead pero no aparece."
+          }
+        ],
+        "title": "Registro de leads"
+      },
+      {
+        "blurb": "Encontrar propietarios y revisar infracciones a través de registros oficiales.",
+        "id": "research",
+        "items": [
+          {
+            "a": "Abre la pestaña Investigación, selecciona el lead y trabaja la lista. Los primeros pasos enlazan a las consultas oficiales de tu región configurada — la División de Evaluación de Bienes Raíces (RPAD) de Honolulu por defecto. Busca por dirección o TMK y registra el nombre del propietario y la dirección postal exactamente como aparecen, luego verifica en la segunda fuente.",
+            "q": "¿Cómo encuentro quién es dueño de una propiedad?"
+          },
+          {
+            "a": "Sí. Ve a Panel → Configuración y cambia tu región a Personalizada, luego ingresa la URL de consulta del tasador de tu condado y la URL de cumplimiento de códigos/infracciones. Las listas de los leads que agregues desde entonces enlazarán los sitios de tu condado en lugar de los de Honolulu. Los leads existentes conservan sus enlaces originales.",
+            "q": "¿Puedo usar la lista de investigación fuera de Hawái?"
+          },
+          {
+            "a": "Honolulu no ofrece una API pública para datos de propiedad o infracciones, así que ninguna app puede obtenerlos con un clic. La lista te enlaza directamente a las páginas oficiales de consulta y lleva registro de lo que has confirmado.",
+            "q": "¿Por qué la app no puede buscar propietarios automáticamente?"
+          },
+          {
+            "a": "Presunta es tu observación de campo (p. ej. «vehículos chatarra en el patio, posible infracción»). Confirmada significa que la viste en un registro oficial, como un aviso de infracción o el estado de un permiso en HNL Build. Mantén las dos separadas — la lista de investigación tiene un paso dedicado para confirmar con evidencia.",
+            "q": "¿Cuál es la diferencia entre infracciones presuntas y confirmadas?"
+          },
+          {
+            "a": "La Ciudad restringe los registros detallados de infracciones al solicitante. La lista de la app enlaza a la página de registros de DPP, donde puedes buscar primero en HNL Build por dirección o TMK; para registros más allá del listado, envía una solicitud a la Rama de Acceso a Datos e Imágenes (dppdaib@honolulu.gov).",
+            "q": "HNL Build no me muestra los detalles completos de las infracciones. ¿Por qué?"
+          },
+          {
+            "a": "La lista incluye un paso de skip-tracing, pero usarás tu propio servicio de skip-tracing para buscar teléfonos y correos. Registra la fuente y la fecha de todo lo que encuentres — nunca adivines la información de contacto.",
+            "q": "¿Debería hacer skip-tracing dentro de la app?"
+          }
+        ],
+        "title": "Flujo de investigación"
+      },
+      {
+        "blurb": "Evaluar propiedades que no puedes visitar en persona.",
+        "id": "remote",
+        "items": [
+          {
+            "a": "Abre el lead en la pestaña Investigación y usa la sección Fotos y evaluación remota: sube fotos que te envíe un contacto, guarda un enlace de recorrido virtual (un video del recorrido o la grabación de una videollamada) y completa el informe de condición — una lista estructurada de exterior/interior que cubre techo, paredes, ventanas, puertas, patio, problemas estructurales, señales de desocupación y servicios. Cada elemento se califica bueno, regular o malo con espacio para notas.",
+            "q": "No puedo visitar una propiedad en persona. ¿Cómo puedo evaluarla igual?"
+          },
+          {
+            "a": "Archivos de imagen (JPEG, PNG, WebP y similares) de hasta 8 MB cada uno, con hasta 12 fotos por propiedad. Agrega una descripción a cada foto para recordar lo que muestra.",
+            "q": "¿Qué formatos y tamaños de fotos se admiten?"
+          },
+          {
+            "a": "Solo tú — las fotos son privadas de tu cuenta, igual que tus leads. Nunca se comparten con otros suscriptores.",
+            "q": "¿Quién puede ver las fotos que subo?"
+          }
+        ],
+        "title": "Evaluación remota"
+      },
+      {
+        "blurb": "Generar borradores de contratos de cesión de wholesale.",
+        "id": "contracts",
+        "items": [
+          {
+            "a": "Un borrador de contrato de cesión de wholesale prellenado con la propiedad, el vendedor, el precio, el depósito de garantía, el cargo por cesión y los detalles de cierre que ingreses. Eliges una plantilla al crear el borrador: Hawái (con divulgaciones apropiadas para Hawái, como tu intención de ceder el contrato por un cargo) o Genérica, con lenguaje neutro para propiedades en otros estados. Cada borrador lleva la marca de agua SOLO BORRADOR.",
+            "q": "¿Qué crea el generador de contratos?"
+          },
+          {
+            "a": "No — la app no recoge firmas electrónicas. Genera el borrador, imprímelo (o guárdalo como PDF) y recoge las firmas en papel o con tu propia herramienta de firma electrónica.",
+            "q": "¿Puede el vendedor firmar dentro de la app?"
+          },
+          {
+            "a": "En la pestaña Contratos, haz clic en «Vista previa e imprimir» en el borrador. En la vista de impresión, usa el diálogo de impresión de tu navegador (Ctrl/Cmd + P) y elige «Guardar como PDF» como destino. Si el diseño se ve mal, consulta la guía de solución de problemas «Contrato no se imprime correctamente».",
+            "q": "¿Cómo imprimo o guardo un contrato como PDF?"
+          },
+          {
+            "a": "No. Es un borrador inicial, no un sustituto de un acuerdo redactado por un abogado. Los borradores de la plantilla de Hawái necesitan revisión de un abogado de bienes raíces con licencia en Hawái; los de la plantilla Genérica necesitan revisión de un abogado con licencia en el estado donde esté la propiedad, ya que las reglas de wholesale varían por estado. Nadie debería confiar en él ni firmarlo antes de esa revisión.",
+            "q": "¿El contrato generado está listo para usarse tal cual?"
+          },
+          {
+            "q": "¿Qué es la revisión del abogado?",
+            "a": "En cualquier borrador de contrato, haz clic en «Solicitar revisión del abogado». Enviamos los detalles de tu borrador a nuestro abogado de bienes raíces asociado en Hawái y te presentamos como un cliente potencial. El abogado se comunica contigo directamente para revisarlo — la aplicación no comparte tus datos con nadie más."
+          },
+          {
+            "q": "¿Cuánto cuesta la revisión del abogado?",
+            "a": "El abogado te factura por separado y directamente — los honorarios de revisión no forman parte de tu suscripción a Violation Scout. Confirma los honorarios con el abogado antes de que comience el trabajo."
+          },
+          {
+            "q": "¿Solicitar una revisión convierte al abogado en mi abogado?",
+            "a": "No. Tu solicitud es solo una presentación. La relación abogado-cliente comienza únicamente cuando el abogado acepta tu contratación bajo sus propios términos."
+          },
+          {
+            "q": "¿Puedo solicitar la revisión de nuevo después de modificar el borrador?",
+            "a": "Sí. Una vez solicitada, el botón se convierte en una insignia de «Revisión solicitada». Si modificas el borrador, usa la opción de reenviar para enviar la versión actualizada al abogado."
+          }
+        ],
+        "title": "Contratos"
+      },
+      {
+        "blurb": "Prueba, precios ($39/mes después de una prueba gratuita de 14 días) y cancelaciones.",
+        "id": "billing",
+        "items": [
+          {
+            "a": "Después de tu prueba gratuita de 14 días, la suscripción es de $39/mes, facturada mensualmente a través de Stripe. No hay cargos por lead, paquetes de créditos ni complementos.",
+            "q": "¿Cuánto cuesta Violation Scout?"
+          },
+          {
+            "a": "Ve a la página de Facturación y haz clic en «Gestionar suscripción» para abrir el Portal del Cliente de Stripe, luego cancela allí. Tu acceso continúa hasta el final del período de facturación actual, y no se te cobrará de nuevo.",
+            "q": "¿Cómo cancelo mi suscripción?"
+          },
+          {
+            "a": "Unos 3 días antes de que termine tu prueba, te enviamos un recordatorio por correo. Si añadiste un método de pago desde la página de Facturación, se te cobran $39/mes cuando termina la prueba y tu suscripción se activa. Si no añadiste ninguno, tu suscripción se cancela automáticamente — tu acceso termina y nunca se te cobra.",
+            "q": "¿Qué pasa cuando termina mi prueba?"
+          },
+          {
+            "a": "Abre la página de Facturación → «Gestionar suscripción» y actualiza tu método de pago en el Portal del Cliente de Stripe. Si un pago sigue sin resolverse, tu acceso al panel se pausa hasta que la facturación esté al día — se restaura automáticamente una vez que el pago tiene éxito.",
+            "q": "Mi pago falló. ¿Qué debo hacer?"
+          },
+          {
+            "a": "Sí — cada suscripción de pago incluye una garantía de devolución de 30 días, sin preguntas. Si estás dentro de los 30 días de un pago, haz clic en «Solicitar un reembolso» en la página de Facturación o usa el formulario de soporte de abajo con el tema de reembolso. Los reembolsos los emite manualmente el fundador en Stripe, normalmente en un plazo de 5 días hábiles, al método de pago original.",
+            "q": "¿Ofrecen reembolsos?"
+          },
+          {
+            "a": "Tu prueba empieza en el momento en que haces clic en «Empieza gratis» — intenta recargar la página. Si sigue inactiva después de unos minutos, asegúrate de haber iniciado sesión con el mismo correo con el que empezaste la prueba y contacta con soporte.",
+            "q": "Empecé mi prueba pero mi panel sigue inactivo."
+          },
+          {
+            "q": "¿Recibiré un recordatorio antes de que termine mi prueba?",
+            "a": "Sí. Unos 3 días antes de que expire tu prueba, te enviamos un correo a tu dirección de inicio de sesión con un enlace para añadir un método de pago. El recordatorio es automático — pero añadir tu tarjeta depende de ti."
+          }
+        ],
+        "title": "Facturación y suscripción"
+      },
+      {
+        "blurb": "Enlaces mágicos, cambios de correo y tus datos.",
+        "id": "account",
+        "items": [
+          {
+            "a": "Violation Scout usa inicio de sesión sin contraseña. Ingresa tu correo en la página de inicio de sesión y te enviaremos un enlace mágico — haz clic y ya estás dentro. Sin contraseñas que recordar ni restablecer.",
+            "q": "¿Cómo inicio sesión? Nunca configuré una contraseña."
+          },
+          {
+            "a": "Consulta la guía de solución de problemas «Correo con enlace mágico no llega» más abajo.",
+            "q": "No recibí mi correo con el enlace mágico."
+          },
+          {
+            "a": "Aún no es autoservicio — contacta a soporte con tu correo actual y el nuevo y moveremos tu cuenta y tus leads.",
+            "q": "¿Puedo cambiar el correo electrónico de mi cuenta?"
+          },
+          {
+            "a": "Contacta a soporte y pide la eliminación de la cuenta. Eliminaremos permanentemente tu registro de usuario y todos los leads, elementos de investigación y borradores de contrato asociados.",
+            "q": "¿Cómo elimino mi cuenta y mis datos?"
+          },
+          {
+            "a": "Ve a Panel → Configuración. Elige Hawái (la opción por defecto, usando las consultas RPAD y HNL Build de Honolulu) o Personalizada, donde ingresas las URLs de consulta del tasador de tu condado y de cumplimiento de códigos. El cambio aplica a las listas de investigación de los leads que agregues después; los leads existentes conservan sus enlaces originales.",
+            "q": "¿Dónde cambio mi región de investigación?"
+          },
+          {
+            "a": "Sí. Todas las propiedades, notas de investigación y borradores de contrato están limitados a tu cuenta — otros suscriptores no pueden verlos. Consulta la Política de privacidad para más detalles.",
+            "q": "¿Mis datos de leads son privados?"
+          },
+          {
+            "q": "¿Quién es dueño de los datos que pongo en Violation Scout?",
+            "a": "Tú. Nunca vendemos tus datos a nadie, por ningún motivo. Puedes exportar tu registro completo de oportunidades a CSV en cualquier momento desde el panel, cancelar con un clic desde la página de Facturación y pedir a soporte que elimine permanentemente los datos de tu cuenta."
+          }
+        ],
+        "title": "Cuenta e inicio de sesión"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "causes": [
+          "Sin conexión a internet o una conexión muy lenta (común en el campo).",
+          "Un bloqueador de anuncios, extensión de privacidad o VPN bloqueando el servidor de mosaicos.",
+          "Mosaicos en caché obsoletos o una sesión de mapa atascada."
+        ],
+        "contactWhen": "Si los mosaicos siguen sin cargar en dos redes diferentes con las extensiones desactivadas, contacta a soporte y dinos tu dispositivo, tu navegador y si el resto de la app funciona.",
+        "id": "map-tiles",
+        "steps": [
+          "Revisa tu conexión: carga cualquier otro sitio web. Si estás en el campo con señal débil, muévete a un lugar con mejor recepción y recarga.",
+          "Recarga forzada de la página (Ctrl/Cmd + Shift + R).",
+          "Desactiva temporalmente los bloqueadores de anuncios o extensiones de privacidad para este sitio, luego recarga.",
+          "Si usas una VPN, desconéctala e inténtalo de nuevo — algunas salidas de VPN son limitadas por los proveedores de mosaicos.",
+          "Borra la caché de tu navegador para este sitio, o prueba una ventana privada/de incógnito.",
+          "Prueba una red diferente (p. ej. cambia de Wi-Fi a datos móviles) para descartar un bloqueo a nivel de red."
+        ],
+        "symptoms": [
+          "El área del mapa se ve gris, en blanco o muestra un mensaje de «mosaicos no disponibles».",
+          "Las calles y las imágenes satelitales nunca aparecen, ni siquiera esperando."
+        ],
+        "title": "Mosaicos del mapa no cargan"
+      },
+      {
+        "causes": [
+          "El correo llegó a spam/correo no deseado o a una pestaña de Promociones.",
+          "Un error de escritura en la dirección de correo que ingresaste.",
+          "Filtros de correo corporativo o escolar poniendo en cuarentena el correo automatizado.",
+          "Solicitar varios enlaces seguidos — solo funciona el más reciente, y las repeticiones rápidas pueden parecer abuso a los filtros."
+        ],
+        "contactWhen": "Si no llega ningún enlace después de 15 minutos en dos direcciones de correo diferentes, contacta a soporte con la dirección que estás intentando usar (no pegues ningún código de enlace).",
+        "id": "magic-link",
+        "steps": [
+          "Espera 5 minutos — la entrega del correo a veces es lenta.",
+          "Revisa spam/correo no deseado y las pestañas de Promociones o Actualizaciones, y busca la dirección del remitente.",
+          "Confirma que escribiste bien tu correo, luego solicita un enlace nuevo y usa solo el correo más reciente.",
+          "Si usas una dirección de trabajo o escuela, prueba con una personal — los filtros corporativos suelen bloquear el correo automatizado.",
+          "Agrega la dirección del remitente a tus contactos y solicita otro enlace."
+        ],
+        "symptoms": [
+          "Solicitaste un enlace de inicio de sesión pero no llega ningún correo en unos minutos.",
+          "La página de inicio de sesión dice que el enlace se envió, pero tu bandeja está vacía."
+        ],
+        "title": "Correo con enlace mágico no llega"
+      },
+      {
+        "causes": [
+          "El webhook de confirmación de Stripe aún no ha llegado a la app (normalmente segundos, a veces minutos).",
+          "El pago se cerró o canceló antes de completarse.",
+          "Pagaste con un correo diferente al de tu cuenta."
+        ],
+        "contactWhen": "Si empezaste una prueba en los últimos 14 días y la página de Facturación sigue sin mostrar suscripción después de 15 minutos, contacta con soporte indicando el correo con el que te registraste.",
+        "id": "subscription-status",
+        "steps": [
+          "Espera 2–3 minutos y recarga la página de Facturación.",
+          "Asegúrate de haber iniciado sesión con el mismo correo con el que empezaste la prueba.",
+          "Si la prueba empezó hace más de 14 días sin añadir un método de pago, ha expirado — inicia una nueva prueba desde la página de Facturación si aún no tuviste una."
+        ],
+        "symptoms": [
+          "Empezaste tu prueba gratuita pero la página de Facturación sigue sin mostrar una suscripción activa.",
+          "Se te redirige a la página de Facturación al abrir el panel."
+        ],
+        "title": "El estado de la prueba o suscripción no se actualiza"
+      },
+      {
+        "causes": [
+          "Tarjeta rechazada por tu banco (fondos insuficientes, retención por fraude, bloqueo internacional).",
+          "Tarjeta vencida o datos mal escritos.",
+          "Extensiones del navegador interfiriendo con la ventana emergente de Stripe."
+        ],
+        "contactWhen": "Si dos tarjetas válidas distintas fallan y tu banco dice que no hay nada bloqueado, contacta con soporte incluyendo el mensaje de error exacto que muestra Stripe.",
+        "id": "checkout-errors",
+        "steps": [
+          "Revisa el número de tarjeta, la fecha de vencimiento y el CVC, y confirma que el código postal de facturación coincida con los registros de tu banco.",
+          "Prueba con otra tarjeta o llama al número que está al reverso de tu tarjeta — muchas veces el banco solo necesita que apruebes el cargo.",
+          "Desactiva los bloqueadores de anuncios en la página de Stripe e inténtalo en una ventana privada/de incógnito."
+        ],
+        "symptoms": [
+          "Añadir o actualizar tu tarjeta en el Portal del Cliente de Stripe muestra un error.",
+          "Tu tarjeta es rechazada cuando la prueba se convierte en suscripción de pago."
+        ],
+        "title": "Errores con el método de pago"
+      },
+      {
+        "causes": [
+          "El guardado realmente falló (p. ej. se cortó la conexión) — la app muestra una alerta en ese caso.",
+          "Iniciaste sesión con un correo diferente al que usaste para crear los datos.",
+          "Una página obsoleta está mostrando contenido en caché."
+        ],
+        "contactWhen": "Si los datos siguen sin aparecer después de recargar con buena conexión, contacta a soporte con la dirección o el nombre del contrato y aproximadamente cuándo lo guardaste.",
+        "id": "data-missing",
+        "steps": [
+          "Recarga la página — el panel vuelve a obtener tus datos al cargar.",
+          "Revisa si apareció una alerta de error al guardar. Si decía «No se pudo guardar», probablemente se cortó tu conexión; inténtalo de nuevo con una conexión estable.",
+          "Confirma que iniciaste sesión con el mismo correo que usaste originalmente (los leads son privados de cada cuenta).",
+          "Para un pin de mapa faltante, revisa la pestaña Leads — el lead pudo haberse guardado sin coordenadas."
+        ],
+        "symptoms": [
+          "Guardaste una propiedad, nota de investigación o contrato pero no aparece en la lista.",
+          "La app mostró un error o un mensaje de «No se pudo guardar»."
+        ],
+        "title": "Datos registrados no aparecen"
+      },
+      {
+        "causes": [
+          "Escala o márgenes de impresión del navegador recortando el documento.",
+          "Gráficos de fondo desactivados, ocultando secciones sombreadas.",
+          "Imprimiendo desde el panel en lugar de la vista de impresión dedicada."
+        ],
+        "contactWhen": "Si la vista de impresión en sí se ve rota en pantalla (no solo en papel), contacta a soporte con tu navegador y una descripción de lo que está mal — el borrador sigue a salvo en tu pestaña Contratos.",
+        "id": "contract-print",
+        "steps": [
+          "Imprime siempre desde la vista de impresión dedicada: pestaña Contratos → «Vista previa e imprimir». No imprimas la página del panel.",
+          "En el diálogo de impresión, configura Destino como «Guardar como PDF» (o tu impresora), y Márgenes como «Predeterminado».",
+          "Activa «Gráficos de fondo» en las opciones del diálogo de impresión — el banner de borrador y los bloques sombreados lo necesitan.",
+          "Si el contenido se corta, prueba una escala diferente (p. ej. 90%) o cambia entre Vertical y Horizontal.",
+          "Prueba con otro navegador (la impresión a PDF de Chrome es la más confiable)."
+        ],
+        "symptoms": [
+          "El contrato impreso sale cortado, le faltan páginas o el diseño se ve roto.",
+          "«Guardar como PDF» produce un documento en blanco o parcial."
+        ],
+        "title": "Contrato no se imprime correctamente"
+      }
+    ],
+    "troubleshootingSub": "Soluciones paso a paso para los problemas más comunes. Sigue los pasos en orden — la mayoría se resuelven en el paso 3 o 4.",
+    "troubleshootingTitle": "Solución de problemas"
+  },
+  "landing": {
+    "badge": "Hecho para mayoristas de Hawái",
+    "ctaHow": "Ver cómo funciona",
+    "ctaTrial": "Inicia tu {trial}",
+    "faqTitle": "Preguntas, respondidas directamente",
+    "faqs": [
+      {
+        "a": "Los mayoristas comercializan su interés contractual (equitativo) en una propiedad, no la propiedad en sí, y divulgan la intención de cederla por un cargo. Las reglas son estrictas y específicas de cada caso — habla con un abogado de bienes raíces en Hawái antes de tu primer trato. Esta app incluye las divulgaciones correctas, pero no es asesoría legal.",
+        "q": "¿Necesito una licencia de bienes raíces para hacer wholesale en Hawái?"
+      },
+      {
+        "a": "No — y tampoco las herramientas de $99 al mes, honestamente. Honolulu no publica una API para esto. En su lugar obtienes enlaces de un toque a los registros oficiales de impuestos del condado y la consulta de DPP, más una lista que mantiene separados los hallazgos confirmados de las sospechas.",
+        "q": "¿La app encuentra propietarios e infracciones automáticamente?"
+      },
+      {
+        "a": "Las grandes plataformas licencian fuentes de datos nacionales y te pasan el costo. Esta herramienta es deliberadamente más simple: registro en campo, flujo de investigación y contratos, enfocada en mayoristas de Hawái que hacen driving for dollars por sí mismos.",
+        "q": "¿Por qué $39 cuando la competencia cobra $99+?"
+      },
+      {
+        "a": "Sí. Mes a mes, cancela desde la página de facturación con un clic. Sin compromiso anual, sin cargos por cancelación, sin laberinto de retención.",
+        "q": "¿Puedo cancelar en cualquier momento?"
+      }
+    ],
+    "features": [
+      {
+        "body": "¿Recorriendo el vecindario? Coloca un pin en el momento en que veas una propiedad deteriorada. Sin claves API, sin configuración — el mapa simplemente funciona, incluso en tu teléfono.",
+        "title": "Márcalo en el mapa"
+      },
+      {
+        "body": "Cada pin se convierte en una fila de lead: dirección, notas de deterioro, presuntas infracciones, prioridad, fechas de seguimiento y estado — una hoja de cálculo que se mantiene sincronizada con tu mapa.",
+        "title": "Regístralo como un pro"
+      },
+      {
+        "body": "Una lista guiada te lleva por los registros públicos oficiales de Honolulu — RPAD para propiedad, HNL Build para permisos e infracciones — y registra qué está confirmado vs. qué sigue siendo sospecha.",
+        "title": "Investiga al propietario y las infracciones"
+      },
+      {
+        "body": "Convierte un lead investigado en un borrador de contrato de cesión de wholesale en minutos, con las divulgaciones apropiadas para Hawái incluidas. Imprímelo, revísalo con tu abogado, haz que lo firmen.",
+        "title": "Genera el contrato de cesión"
+      }
+    ],
+    "hero": "Driving for dollars, del asiento del conductor a la mesa de cierre.",
+    "howTitle": "De lead a contrato en cuatro pasos",
+    "perMonth": "/mes",
+    "planBullets": [
+      "{trial} — cancela antes de que termine y no pagas nada",
+      "Propiedades, pins y filas de leads ilimitados",
+      "Mapa + registro de leads + listas de investigación",
+      "Generador de contratos de cesión de wholesale",
+      "Mes a mes, cancela en cualquier momento con un clic"
+    ],
+    "pricingSub": "Las herramientas nacionales empiezan en $99/mes y miden todo. Un plan, un precio.",
+    "pricingTitle": "Precio simple y honesto",
+    "sub": "Ve una propiedad deteriorada en Nanakuli, márcala en el mapa, registra lo que veas, investiga al propietario a través de los registros oficiales del condado y genera tu contrato de cesión de wholesale — un flujo simple, {price} después de un {trial}.",
+    "trialNote": "Empieza gratis — no se requiere tarjeta de crédito. Cancela cuando quieras.",
+    "attorneyLine": "Violation Scout te conecta con un abogado de bienes raíces de Hawái para revisar tu contrato.",
+    "attorneySub": "Con un clic envías cualquier borrador a revisión profesional. Los borradores son borradores hasta que se revisan — la relación abogado-cliente comienza solo cuando contratas al abogado.",
+    "guaranteeNote": "Garantía de devolución de 30 días — sin preguntas.",
+    "sampleCta": "Ver un contrato de muestra",
+    "dataTitle": "Tus datos son tuyos",
+    "dataSub": "Tu cartera de oportunidades es tu sustento. La tratamos como tal.",
+    "dataBullets": [
+      "Nunca vendemos tus datos — a nadie, por ningún motivo.",
+      "Exporta todo a CSV cuando quieras, directamente desde el registro de oportunidades.",
+      "Cancela con un clic desde la página de Facturación — sin llamadas ni laberintos.",
+      "¿Quieres que se borre todo? Contacta con soporte y eliminaremos los datos de tu cuenta."
+    ],
+    "testimonialsTitle": "Historias de éxito de mayoristas",
+    "testimonialsSub": "Operaciones reales de suscriptores reales.",
+    "testimonialsEmptyTitle": "Sé nuestra primera historia de éxito",
+    "testimonialsEmptyBody": "¿Cerraste una operación con Violation Scout? Nos encantaría presentar tu historia — con tu permiso, por supuesto.",
+    "testimonialsEmptyCta": "Comparte tu historia de éxito"
+  },
+  "leadTable": {
+    "delete": "Eliminar",
+    "deleteConfirm": "¿Eliminar este lead?",
+    "edit": "Editar",
+    "empty": "Aún no hay leads. Coloca un pin en la pestaña Mapa o agrega tu primera propiedad para iniciar tu registro.",
+    "emptyGuide": "Guía del registro de leads",
+    "exportCsv": "Exportar CSV",
+    "headers": {
+      "actions": "Acciones",
+      "address": "Dirección",
+      "followUp": "Seguimiento",
+      "owner": "Propietario",
+      "priority": "Prioridad",
+      "status": "Estado"
+    },
+    "noOwner": "—",
+    "research": "Investigar"
+  },
+  "meta": {
+    "billingTitle": "Facturación — Violation Scout",
+    "dashboardTitle": "Panel — Violation Scout",
+    "helpDescription": "Respuestas, guías de solución de problemas y soporte para Violation Scout: registro en el mapa, gestión de leads, investigación, contratos y facturación.",
+    "helpTitle": "Centro de ayuda — Violation Scout",
+    "landingDescription": "Marca propiedades deterioradas en un mapa, registra leads de infracciones al código, investiga propietarios a través de los registros públicos oficiales de Hawái y genera contratos de cesión de wholesale — en una herramienta simple.",
+    "landingTitle": "Violation Scout — Driving for Dollars, hecho para Hawái",
+    "loginTitle": "Iniciar sesión — Violation Scout",
+    "settingsTitle": "Configuración de región — Violation Scout",
+    "signupTitle": "Inicia tu prueba gratuita — Violation Scout",
+    "sampleContractTitle": "Contrato de cesión mayorista de muestra | Violation Scout",
+    "sampleContractDescription": "Mira exactamente cómo es un borrador de cesión mayorista de Violation Scout — sin registro.",
+    "guidesTitle": "Guías de wholesaling | Violation Scout",
+    "guidesDescription": "Guías gratuitas enfocadas en Hawái: contratos de cesión, cumplimiento en wholesaling, lectura de avisos de violación y cómo hablar con vendedores."
+  },
+  "nav": {
+    "dashboard": "Panel",
+    "help": "Ayuda",
+    "language": "Idioma",
+    "pricing": "Precios",
+    "settings": "Configuración",
+    "signIn": "Iniciar sesión",
+    "signOut": "Cerrar sesión",
+    "startTrial": "Iniciar prueba gratuita"
+  },
+  "pricing": {
+    "price": "${price}/mes",
+    "trial": "Prueba gratuita de {days} días"
+  },
+  "propertyForm": {
+    "addLead": "Agregar lead",
+    "address": "Dirección de la propiedad *",
+    "addressPlaceholder": "87-1234 Farrington Hwy",
+    "cancel": "Cancelar",
+    "city": "Ciudad",
+    "distressNotes": "Lo que viste (notas de deterioro)",
+    "distressPlaceholder": "Patio descuidado, ventanas tapiadas, correo acumulado…",
+    "followUp": "Seguimiento",
+    "pinnedAt": "Pin colocado en {lat}, {lng}",
+    "priority": "Prioridad",
+    "saveChanges": "Guardar cambios",
+    "saving": "Guardando…",
+    "status": "Estado",
+    "suspectedViolations": "Presuntas infracciones al código",
+    "tmk": "TMK",
+    "tmkPlaceholder": "1-8-7-…",
+    "violationsPlaceholder": "p. ej. ampliación sin permiso, vehículos chatarra — solo sospechas hasta confirmar en la investigación",
+    "virtualTour": "Enlace de recorrido virtual",
+    "virtualTourHint": "Una grabación de videollamada, enlace de YouTube/Vimeo o recorrido Matterport que te compartió un contacto.",
+    "virtualTourInvalid": "Ingresa un enlace http(s) válido, o déjalo en blanco.",
+    "virtualTourPlaceholder": "https://… enlace al video del recorrido",
+    "zip": "Código postal",
+    "zipPlaceholder": "96792"
+  },
+  "remote": {
+    "captionPlaceholder": "Descripción…",
+    "close": "Cerrar",
+    "conditionSave": "Guardar informe de condición",
+    "conditionSaveFailed": "No se pudo guardar el informe de condición. Inténtalo de nuevo.",
+    "conditionSaved": "Informe de condición guardado.",
+    "conditionSaving": "Guardando…",
+    "conditionSub": "Completa esto desde fotos, un video del recorrido o una persona en el lugar. Las calificaciones son a tu criterio — anota en qué las basaste.",
+    "conditionTitle": "Informe remoto de condición",
+    "deletePhoto": "Eliminar foto",
+    "deletePhotoConfirm": "¿Eliminar esta foto?",
+    "items": {
+      "doors": "Puertas",
+      "roof": "Techo",
+      "structural": "Problemas estructurales visibles",
+      "utilities": "Servicios conectados / desconectados",
+      "vacancy": "Señales de desocupación",
+      "walls": "Paredes / revestimiento",
+      "windows": "Ventanas",
+      "yard": "Patio / jardinería"
+    },
+    "maxPhotos": "Hasta {max} fotos por propiedad.",
+    "noPhotos": "Aún no hay fotos. Sube imágenes que te envíe un contacto, bird dog o agente.",
+    "notConfigured": "Las subidas de fotos no están habilitadas en este sitio aún — el propietario necesita agregar un token de Vercel Blob. El enlace de recorrido virtual y el informe de condición de abajo siguen funcionando.",
+    "notesPlaceholder": "Notas — ¿qué viste y cómo (foto, videollamada, persona en el lugar)?",
+    "photosTitle": "Fotos",
+    "status": {
+      "fair": "Regular",
+      "good": "Bueno",
+      "poor": "Malo",
+      "unchecked": "Sin revisar"
+    },
+    "sub": "¿No puedes visitar en persona? Sube fotos que te envíe un contacto, guarda un enlace de recorrido virtual y trabaja el informe de condición abajo.",
+    "title": "Fotos y evaluación remota",
+    "tourNone": "No hay enlace de recorrido virtual guardado. Agrega uno al editar el lead.",
+    "tourOpen": "Abrir recorrido virtual ↗",
+    "tourTitle": "Enlace de recorrido virtual",
+    "upload": "Subir fotos",
+    "uploadErrorCount": "Puedes subir hasta {max} fotos por propiedad.",
+    "uploadErrorGeneric": "La subida falló. Inténtalo de nuevo.",
+    "uploadErrorSize": "Cada foto debe pesar menos de {max} MB.",
+    "uploadErrorType": "Solo se pueden subir archivos de imagen.",
+    "uploading": "Subiendo…",
+    "viewLarger": "Ver más grande"
+  },
+  "research": {
+    "add": "Agregar",
+    "addStepPlaceholder": "Agregar un paso de investigación personalizado…",
+    "deleteStepConfirm": "¿Eliminar este paso?",
+    "linkHints": {
+      "customAssessor": "El sitio oficial de tu condado. Busca por dirección o parcela/APN el nombre del propietario y la dirección postal.",
+      "customViolation": "La consulta oficial de permisos/infracciones de tu ciudad o condado. Busca por dirección o parcela/APN.",
+      "hnlbuild": "Página de registros de DPP: busca primero en HNL Build por dirección/TMK. Los detalles completos de infracciones están restringidos al solicitante — solicita otros registros a la Rama de Acceso a Datos e Imágenes (dppdaib@honolulu.gov).",
+      "qpublic": "Portal oficial alternativo de evaluación con mapas GIS. Busca por dirección o TMK de 16 dígitos.",
+      "rpad": "Sitio oficial de la Ciudad y el Condado. Busca por dirección o TMK el nombre del propietario, el valor tasado y el historial de ventas."
+    },
+    "notesPlaceholder": "Hallazgos + fecha…",
+    "openLookup": "Abrir consulta oficial ↗",
+    "ownerHint": "Exactamente como aparece en los registros de impuestos del condado — nunca una suposición.",
+    "ownerLabel": "Nombre confirmado del propietario",
+    "ownerPlaceholder": "Nombre del propietario de RPAD / qPublic",
+    "regions": {
+      "custom": {
+        "description": "Dirige la lista de investigación a los sitios del tasador de impuestos y cumplimiento de códigos de tu propio condado.",
+        "name": "Personalizada"
+      },
+      "hawaii": {
+        "description": "Consultas oficiales de Honolulu: RPAD y qPublic para propiedad, HNL Build de DPP para permisos e infracciones.",
+        "name": "Hawái (por defecto)"
+      }
+    },
+    "removeStep": "Quitar paso",
+    "save": "Guardar",
+    "stepDone": "Hecho",
+    "stepInProgress": "En curso",
+    "stepTodo": "Pendiente",
+    "steps": {
+      "checkViolations": "Revisar {source} para permisos e infracciones",
+      "confirmViolation": "Confirmar la presunta infracción con evidencia",
+      "confirmViolationHint": "Fotos del recorrido o remotas, fechas observadas y qué sección específica del código crees que aplica. Mantén separados los hallazgos presuntos de los confirmados.",
+      "crossCheck": "Verificar la propiedad en {source}",
+      "crossCheckHint": "Confirma que la parcela/APN coincida con la propiedad que recorriste.",
+      "findOwner": "Encontrar al propietario vía {source}",
+      "findOwnerHint": "Registra el nombre del propietario y la dirección postal exactamente como aparecen.",
+      "makeContact": "Hacer contacto (correo, visita puerta a puerta o llamada)",
+      "makeContactHint": "Registra la fecha, el método y el resultado de cada contacto.",
+      "skipTrace": "Hacer skip-tracing del teléfono y correo del propietario",
+      "skipTraceHint": "Usa tu servicio de skip-tracing preferido. Registra la fuente y la fecha — nunca adivines la información de contacto."
+    },
+    "stepsDone": "{done} de {total} pasos completados"
+  },
+  "settings": {
+    "assessorSiteName": "Tasador de impuestos del condado — nombre del sitio",
+    "assessorSitePlaceholder": "p. ej. Tasador del Condado de Maricopa",
+    "assessorUrl": "Tasador de impuestos del condado — URL de consulta *",
+    "assessorUrlHint": "La página oficial donde buscas por dirección o parcela/APN los registros de propiedad.",
+    "customNote": "Usa las páginas oficiales de registros públicos de tu condado o ciudad — no sitios de datos de pago. Cualquiera puede suscribirse desde cualquier parte del mundo; estos enlaces solo le dicen a la lista a dónde enviarte.",
+    "hawaiiLookups": "Consultas predefinidas de Hawái",
+    "needAssessorUrl": "Ingresa la URL del tasador de tu condado, o vuelve a la opción predefinida de Hawái.",
+    "regionLabel": "Región de investigación",
+    "save": "Guardar configuración",
+    "savedOk": "Configuración de región guardada. Los nuevos leads usarán estos enlaces de investigación.",
+    "saving": "Guardando…",
+    "sub": "Dónde busca la lista de investigación propietarios e infracciones para los leads recién agregados. Los leads existentes conservan sus enlaces actuales.",
+    "title": "Configuración de región",
+    "urlPlaceholder": "https://…",
+    "violationSiteName": "Cumplimiento de códigos / infracciones — nombre del sitio",
+    "violationSitePlaceholder": "p. ej. Portal de cumplimiento de códigos de la ciudad",
+    "violationUrl": "Cumplimiento de códigos / infracciones — URL de consulta",
+    "violationUrlHint": "La página oficial donde buscas permisos e infracciones por dirección o parcela/APN."
+  },
+  "status": {
+    "assigned": "Cedido",
+    "contacted": "Contactado",
+    "dead": "Descartado",
+    "new": "Lead nuevo",
+    "offer_made": "Oferta hecha",
+    "priorityHigh": "Alta",
+    "priorityLow": "Baja",
+    "priorityMedium": "Media",
+    "researching": "Investigando",
+    "under_contract": "Bajo contrato"
+  },
+  "support": {
+    "responsePromise": "Nos esforzamos por responder en 2 días hábiles."
+  },
+  "supportForm": {
+    "email": "Correo electrónico",
+    "emailPlaceholder": "tu@ejemplo.com",
+    "errorEmail": "Ingresa una dirección de correo válida.",
+    "errorMessageLong": "Mantén tu mensaje por debajo de 5,000 caracteres.",
+    "errorMessageShort": "Describe el problema con un poco más de detalle (más de 10 caracteres).",
+    "errorName": "Ingresa tu nombre.",
+    "errorSend": "Hubo un problema al enviar tu mensaje.",
+    "errorTopic": "Elige un tema.",
+    "message": "¿Cómo podemos ayudarte?",
+    "messagePlaceholder": "Describe qué pasó, qué esperabas y cualquier mensaje de error que viste…",
+    "name": "Nombre",
+    "namePlaceholder": "Jane Doe",
+    "note": "No incluyas contraseñas ni números completos de tarjeta — nunca te los pediremos.",
+    "send": "Enviar mensaje",
+    "sending": "Enviando…",
+    "sentBody": "{promise} Si es urgente, incluye «urgente» en un mensaje de seguimiento y le daremos prioridad.",
+    "sentTitle": "Mensaje enviado — gracias.",
+    "topic": "Tema",
+    "topics": {
+      "account": "Cuenta e inicio de sesión",
+      "billing": "Facturación y suscripción",
+      "bug": "Informe de error",
+      "contracts": "Contratos",
+      "getting-started": "Primeros pasos",
+      "lead-log": "Registro de leads",
+      "map-logging": "Registro en mapa y propiedades",
+      "other": "Otro tema",
+      "research": "Flujo de investigación",
+      "refund": "Solicitud de reembolso",
+      "success-story": "Comparte tu historia de éxito"
+    }
+  },
+  "contractPrint": {
+    "reviewGeneric": "Revíselo con cuidado — un abogado de bienes raíces con licencia en el estado de la propiedad debe aprobar este borrador antes de que alguien lo firme.",
+    "reviewHawaii": "Revíselo con cuidado — su abogado en Hawái debe aprobar este borrador antes de que alguien lo firme.",
+    "print": "Imprimir",
+    "reviewRequestedNote": "Revisión del abogado solicitada el {date}."
+  },
+  "authEmail": {
+    "subject": "Inicia sesión en {product}",
+    "greeting": "Hola,",
+    "body": "Haz clic en el enlace de abajo para iniciar sesión en {product}. El enlace caduca en 24 horas y funciona en cualquier dispositivo.",
+    "cta": "Iniciar sesión en {product}",
+    "fallback": "O pega este enlace en tu navegador:",
+    "footer": "Si no solicitaste este correo, puedes ignorarlo sin problema."
+  },
+  "sampleContract": {
+    "bannerTitle": "CONTRATO DE MUESTRA",
+    "bannerBody": "Esto es una demostración de la plantilla de cesión mayorista de Violation Scout, con datos ficticios. No es un documento legal ni asesoría legal — todo contrato real debe ser revisado por un abogado licenciado antes de que alguien lo firme.",
+    "bannerCta": "Empieza tu prueba gratuita",
+    "watermark": "Muestra",
+    "footerNote": "Muestra con fines ilustrativos. Los borradores reales se generan con tus propios datos dentro de la app."
+  },
+  "guides": {
+    "title": "Guías de wholesaling",
+    "sub": "Explicaciones prácticas enfocadas en Hawái sobre contratos de cesión, cumplimiento, avisos de violación y conversaciones con vendedores.",
+    "bannerTitle": "Solo con fines educativos — no es asesoría legal",
+    "bannerBody": "Estas guías explican conceptos generales de wholesaling. No son asesoría legal ni crean una relación abogado-cliente. Haz que un abogado licenciado de Hawái revise tus contratos y operaciones antes de que alguien firme.",
+    "backToGuides": "← Todas las guías",
+    "readMore": "Leer la guía",
+    "articles": [
+      {
+        "slug": "how-assignment-contracts-work",
+        "title": "Cómo funcionan los contratos de cesión en Hawái",
+        "blurb": "La mecánica del wholesaling: poner una propiedad bajo contrato y vender tu participación en ese contrato a un comprador en efectivo.",
+        "intro": "En una operación mayorista nunca compras la propiedad tú mismo. En su lugar, pones la propiedad bajo un contrato de compra que te da derecho a cederlo — y luego vendes tu posición en ese contrato a un comprador final por una tarifa de cesión. Así encajan las piezas en Hawái.",
+        "sections": [
+          {
+            "h": "Encuentra un vendedor motivado",
+            "p": "Los mayoristas buscan propiedades en mal estado: casas vacías, lotes descuidados, violaciones visibles del código. La motivación del vendedor — no solo el descuento — es lo que hace que una operación funcione."
+          },
+          {
+            "h": "Ponla bajo contrato — con derechos de cesión",
+            "p": "Firmas un contrato de compra con el vendedor a un precio que deje margen para tu tarifa y la ganancia del comprador final. El contrato debe permitir explícitamente la cesión y debe revelar que planeas cederlo con ganancia."
+          },
+          {
+            "h": "Revela todo al vendedor",
+            "p": "Dile al vendedor claramente: eres un inversionista, planeas ceder el contrato a otro comprador y ganarás una tarifa de cesión. Las sorpresas en la mesa de cierre matan operaciones y atraen problemas legales."
+          },
+          {
+            "h": "Encuentra tu comprador final",
+            "p": "Comercializa tu interés contractual — no la propiedad en sí — entre tu lista de compradores. Los inversionistas en efectivo te compran la posición del contrato; la tarifa de cesión es tu ganancia."
+          },
+          {
+            "h": "Cierra a través de escrow",
+            "p": "Al cierre, el comprador final financia la compra, el vendedor recibe el precio del contrato y tú recibes tu tarifa de cesión de la liquidación. Nunca tuviste el título."
+          }
+        ]
+      },
+      {
+        "slug": "wholesaling-without-a-license",
+        "title": "Mantenerse en regla haciendo wholesaling sin licencia en Hawái",
+        "blurb": "Las líneas que importan: lo que pueden hacer los mayoristas sin licencia, lo que cruza al corretaje y cómo mantenerse del lado correcto.",
+        "intro": "En Hawái, como en la mayoría de los estados, puedes hacer wholesaling de bienes raíces sin licencia — pero solo si te mantienes dentro de límites claros. La regla central: comercializa tu propio interés contractual, no la propiedad de otra persona.",
+        "sections": [
+          {
+            "h": "Comercializa el contrato, no la propiedad",
+            "p": "Una vez que tienes un contrato cedible, tienes un interés equitativo en la operación. Anunciar ese interés es tu negocio. Anunciar una propiedad sobre la que no tienes contrato — como si fueras su agente de listado — no lo es."
+          },
+          {
+            "h": "Revela tu rol por escrito",
+            "p": "Tu contrato de compra debe indicar que eres un inversionista que puede ceder el contrato con ganancia, con la tarifa revelada. Las revelaciones verbales se olvidan; las escritas te protegen."
+          },
+          {
+            "h": "No hagas el trabajo de un bróker",
+            "p": "No negocies compras para otras personas, no te presentes como agente ni cobres comisiones. Tu compensación es una tarifa de cesión sobre tu propio contrato — ese es todo el modelo."
+          },
+          {
+            "h": "Dinero de garantía e interés equitativo",
+            "p": "Un contrato firmado con contraprestación (dinero de garantía, aunque sea modesto) es lo que te da un interés real y comercializable. Un apretón de manos y un enlace de listados no son una operación mayorista."
+          },
+          {
+            "h": "Ante la duda, llama a un abogado",
+            "p": "Las reglas de Hawái tienen matices locales. Antes de escalar, haz que un abogado de bienes raíces de Hawái revise tu plantilla de contrato y tu lenguaje de marketing. Violation Scout puede conectarte con uno desde cualquier borrador de contrato."
+          }
+        ]
+      },
+      {
+        "slug": "reading-a-honolulu-violation-notice",
+        "title": "Cómo leer un aviso de violación de Honolulu",
+        "blurb": "Lo que un Aviso de Violación realmente te dice — y cómo los inversionistas lo convierten en un lead de vendedor motivado.",
+        "intro": "El Departamento de Planificación y Permisos (DPP) de Honolulu emite Avisos de Violación (NOV) cuando una propiedad infringe los códigos del condado. Para los mayoristas, un NOV es tanto una señal de apuro como un documento de diligencia debida. Así se lee uno.",
+        "sections": [
+          {
+            "h": "El encabezado: quién, dónde, qué",
+            "p": "Un NOV identifica la propiedad (dirección y Tax Map Key), el dueño registrado y la fecha de inspección. Confirma que el TMK coincida con la propiedad que investigas — las direcciones solas pueden engañar."
+          },
+          {
+            "h": "La descripción de la violación y la sección del código",
+            "p": "El aviso cita la sección específica del código infringida (códigos de construcción, zonificación, vivienda o nivelación) y describe la condición encontrada. Busca la sección citada para entender exactamente qué no cumple."
+          },
+          {
+            "h": "Acción correctiva y fecha límite",
+            "p": "El NOV ordena una acción correctiva específica antes de una fecha límite, a menudo 30 días. Los plazos incumplidos escalan a multas — a veces por día — y por eso los dueños se vuelven vendedores motivados."
+          },
+          {
+            "h": "Multas y gravámenes",
+            "p": "Las multas impagas pueden convertirse en gravámenes contra la propiedad. Antes de contratar, verifica el saldo actual de multas y el estado de gravámenes — salen de lo que recibe el vendedor y afectan tus números."
+          },
+          {
+            "h": "Verifica, no supongas",
+            "p": "Los avisos se resuelven, se apelan o se reemplazan. Verifica el estado actual directamente con el DPP (su Oficina de Acceso a Datos e Imágenes gestiona las solicitudes de registros) en lugar de actuar con una copia vieja."
+          }
+        ]
+      },
+      {
+        "slug": "talking-to-sellers-about-violations",
+        "title": "Cómo hablar con vendedores sobre violaciones del código",
+        "blurb": "Las violaciones te dan ventaja — pero solo si la conversación se mantiene respetuosa, honesta y enfocada en soluciones.",
+        "intro": "Tocar una puerta porque el condado marcó la propiedad es delicado. El vendedor puede estar avergonzado, abrumado o enojado. Tu trabajo es ser la persona con una salida, no otra fuente de presión.",
+        "sections": [
+          {
+            "h": "Empieza con empatía, no con la violación",
+            "p": "Empieza con la situación del dueño, no con el papeleo del condado. «Compro casas en este vecindario — ¿está pensando en vender?» funciona mejor que «Vi su aviso de violación»."
+          },
+          {
+            "h": "Nunca te hagas pasar por el gobierno",
+            "p": "No insinúes que eres del condado, no amenaces con medidas de cumplimiento ni sugieras que las multas empeorarán por tu causa. Eso es coerción y envenena las operaciones."
+          },
+          {
+            "h": "Menciona el problema solo para resolverlo",
+            "p": "Cuando salga la violación, preséntala como algo que manejas habitualmente: «Compro tal como está, con violaciones y todo, y yo me encargo del lado del condado». El alivio es tu mejor herramienta de cierre."
+          },
+          {
+            "h": "Incluye el costo de la solución en tu oferta",
+            "p": "Ten una idea realista de cuánto cuesta el cumplimiento — reparaciones, permisos, multas — e inclúyelo en tu oferta. Los vendedores respetan a un comprador cuyos números tienen sentido."
+          },
+          {
+            "h": "Ponlo por escrito, mantenlo limpio",
+            "p": "Toda promesa va en el contrato: términos tal como está, plazos, tu revelación de cesión. Luego deja que tu abogado lo revise antes de que alguien firme."
+          }
+        ]
+      }
+    ],
+    "ctaTrial": "Empieza tu prueba gratuita"
+  }
+}

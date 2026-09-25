@@ -1,0 +1,977 @@
+{
+  "auth": {
+    "ctaLogin": "Padalhan ako ng sign-in link sa email",
+    "ctaSignup": "Padalhan ako ng trial link ko sa email",
+    "emailLabel": "Email address",
+    "errorGeneric": "May nagkamali. Pakisubukang muli.",
+    "errorSend": "Nagkaroon ng problema sa pagpapadala ng link. Pakisubukang muli.",
+    "legal": "Walang password na kailangang tandaan o i-reset. Sa pagpapatuloy, sumasang-ayon ka sa Terms of Service at Privacy Policy.",
+    "loginSub": "Ilagay ang email na ginamit mo sa pag-sign up at padadalhan ka namin ng sign-in link.",
+    "loginTitle": "Maligayang pagbabalik",
+    "sending": "Nagpapadala…",
+    "sent": "Naipadala ang link sa {email}. Buksan ito sa anumang device para {finish}.",
+    "sentFinishLogin": "mag-sign in",
+    "sentFinishSignup": "tapusin ang paggawa ng account mo",
+    "signupSub": "Ilagay ang email mo para gumawa ng account. Magsisimula ang {trial} mo sa susunod na hakbang — hindi kailangan ng credit card.",
+    "signupTitle": "Simulan ang libreng trial mo",
+    "verified": "Tingnan ang email mo — paparating na ang sign-in link mo. Mag-e-expire ito sa loob ng 24 oras."
+  },
+  "billing": {
+    "accessDisabled": "Hindi pinagana ang access",
+    "accessEnabled": "Pinagana ang access",
+    "manageCancel": "Pamahalaan ang payment method / magkansela",
+    "needsSubscription": "Kailangan mo ng aktibong subscription (o trial) para magamit ang dashboard. Simulan ang libreng trial mo sa ibaba — hindi kailangan ng credit card.",
+    "nextBilling": "Susunod na petsa ng billing: {date} ({price}).",
+    "opening": "Binubuksan…",
+    "redirecting": "Nire-redirect sa Stripe…",
+    "status": "Status",
+    "statusActive": "Aktibo",
+    "statusCanceled": "Kinansela",
+    "statusNone": "Walang subscription",
+    "statusPastDue": "Hindi nabayaran sa oras",
+    "statusTrialing": "Libreng trial",
+    "statusUnpaid": "Hindi nabayaran",
+    "stripeNote": "Ligtas na pinangangasiwaan ng Stripe ang pagsingil. Hindi namin nakikita ang numero ng card mo. Kanselahin anumang oras mula sa pahinang ito.",
+    "title": "Billing",
+    "trialEnds": "Magtatapos ang libreng trial mo sa {date}. Walang sisingilin maliban kung magdagdag ka ng paraan ng pagbabayad — kung wala kang gagawin, magtatapos lang ang access.",
+    "startTrial": "Magsimula nang libre — hindi kailangan ng credit card",
+    "addPaymentBefore": "Magdagdag ng paraan ng pagbabayad bago ang {date} para manatili ang iyong access.",
+    "addPayment": "Magdagdag ng paraan ng pagbabayad",
+    "trialCardNote": "Magdagdag ng card bago matapos ang trial mo at magsisimula lang ang pagsingil ng {price} pagkatapos ng trial. Kanselahin anumang oras at wala kang babayaran.",
+    "refundCta": "Humiling ng refund"
+  },
+  "contractBuilder": {
+    "additionalTerms": "Karagdagang mga tuntunin",
+    "additionalTermsPlaceholder": "Anumang iba pang napagkasunduan sa seller…",
+    "assignmentFee": "Assignment fee — isiniwalat sa seller (USD)",
+    "assignmentFeePlaceholder": "hal. 10000",
+    "cancel": "Kanselahin",
+    "closingDate": "Petsa ng closing",
+    "createDraft": "Gumawa ng draft",
+    "draftNotice": "Draft lamang — hindi ito legal advice.",
+    "earnestMoney": "Earnest money (USD)",
+    "genericNotice": "Gumagawa ito ng panimulang template na state-neutral. Dapat itong suriin ng lisensyadong real-estate attorney sa estado ng property bago may pumirma, ayon sa mga kinakailangan sa wholesaling ng estadong iyon.",
+    "hawaiiNotice": "Gumagawa ito ng panimulang template na may mga wholesaling disclosure na angkop sa Hawaiʻi. Dapat itong suriin ng lisensyadong Hawaiʻi attorney bago may pumirma.",
+    "inspectionDays": "Panahon ng inspection (mga araw)",
+    "linkLead": "I-link sa lead (opsyonal)",
+    "noLink": "— walang link —",
+    "propertyAddress": "Address ng property *",
+    "purchasePrice": "Presyo ng pagbili (USD) *",
+    "saveChanges": "I-save ang mga pagbabago",
+    "saving": "Nagse-save…",
+    "sellerName": "Buong legal na pangalan ng seller *",
+    "templateGenericDesc": "State-neutral na pananalita. Dapat itong suriin ng lokal na attorney ayon sa mga patakaran ng estado mo.",
+    "templateGenericName": "Generic (ibang mga estado)",
+    "templateHawaiiDesc": "Pananalita ng wholesaling at assignment disclosure na angkop sa Hawaiʻi.",
+    "templateHawaiiName": "Hawaiʻi",
+    "templateLabel": "Template ng kontrata",
+    "tmk": "TMK"
+  },
+  "dashboard": {
+    "contracts": {
+      "delete": "Burahin",
+      "deleteConfirm": "Buburahin ang draft ng kontratang ito?",
+      "edit": "I-edit",
+      "empty": "Wala pang mga draft ng kontrata. Magsaliksik muna ng lead, saka gumawa ng assignment contract nito dito.",
+      "emptyGuide": "Paano gumagana ang mga kontrata",
+      "fee": "Bayad",
+      "modalEdit": "I-edit ang draft ng kontrata",
+      "modalNew": "Bagong draft ng kontrata",
+      "new": "+ Bagong draft ng kontrata",
+      "previewPrint": "Preview at i-print",
+      "seller": "Seller",
+      "templateGeneric": "Generic",
+      "templateHawaii": "Hawaiʻi",
+      "attorneyNoteStrong": "Attorney review, isang click lang.",
+      "attorneyNote": "Ikokonekta ka ng Violation Scout sa isang real estate attorney sa Hawaiʻi para sa contract review — hilingin ito sa anumang draft sa ibaba. Ang mga draft ay draft lamang hanggang sa masuri.",
+      "requestReview": "Humingi ng attorney review",
+      "reviewRequested": "Nakahiling na ng review",
+      "reviewModalTitle": "Humingi ng attorney review",
+      "reviewModalBody": "Ipinapadala nito ang iyong draft kay {attorney} at ipinakikilala ka bilang potensyal na kliyente. Direktang makikipag-ugnayan sa iyo ang attorney tungkol sa pagsusuri nito.",
+      "reviewModalNote": "Walang ugnayang attorney-client hangga't hindi tinatanggap ng attorney ang iyong kahilingan. Direktang sisingilin ka ng attorney — hindi kasama sa iyong subscription ang bayad sa review.",
+      "reviewConfirm": "Ipadala ang kahilingan",
+      "reviewCancel": "Kanselahin",
+      "reviewResend": "ipadala ulit",
+      "reviewResendTitle": "Ipadala ulit ang kahilingan?",
+      "reviewResendBody": "Nakahiling na ng review noong {date}. Ang muling pagpapadala ay mag-e-email sa attorney ng kasalukuyang bersyon ng draft na ito.",
+      "reviewResendConfirm": "Ipadala ulit",
+      "reviewSending": "Ipinapadala…",
+      "reviewErrorFallback": "Hindi naipadala ang kahilingan. Pakisubukang muli."
+    },
+    "leads": {
+      "add": "+ Magdagdag ng property"
+    },
+    "map": {
+      "empty": "Wala pang mga pin — i-tap ang mapa para i-log ang unang property mo.",
+      "emptyGuide": "Paano gumagana ang pag-log sa mapa",
+      "hint": "I-click ang kahit saang bahagi ng mapa para maglagay ng pin at i-log ang property. I-click ang pin para buksan ang research checklist nito.",
+      "loading": "Naglo-load ang mapa…"
+    },
+    "propertyModal": {
+      "add": "Magdagdag ng property",
+      "edit": "I-edit ang lead",
+      "log": "I-log ang property na ito"
+    },
+    "research": {
+      "empty": "Magdagdag muna ng lead —",
+      "emptyGuide": "paano gumagana ang pananaliksik",
+      "selectGuide": "Gabay sa pananaliksik",
+      "selectLead": "Pumili ng lead",
+      "selectPrompt": "Pumili ng lead para magawa ang research checklist nito.",
+      "stepsDone": "{done}/{total} hakbang na ang natapos"
+    },
+    "saveFailed": "Hindi na-save",
+    "tabs": {
+      "contracts": "Mga Kontrata ({count})",
+      "leads": "Mga Lead ({count})",
+      "map": "Mapa",
+      "research": "Pananaliksik"
+    }
+  },
+  "footer": {
+    "disclaimer": "Ang tool na ito ay nagbibigay ng pangkalahatang impormasyon at mga template ng dokumento para sa layuning pang-edukasyon. Hindi ito legal advice, hindi law firm, at hindi real estate brokerage. Iba-iba ang mga patakaran sa wholesaling ayon sa estado — dapat suriin ng lisensyadong Hawaiʻi attorney ang anumang kontrata bago may pumirma.",
+    "helpCenter": "Help Center",
+    "rights": "© {year} {productName}. Nakalaan ang lahat ng karapatan.",
+    "guides": "Mga Gabay"
+  },
+  "help": {
+    "causes": "Mga malamang na sanhi",
+    "clear": "Linisin",
+    "contactSub": "{promise} Para sa mga tanong tungkol sa billing, mas mabilis ka naming mahahanap kung alam namin ang email sa account mo.",
+    "contactSupport": "Makipag-ugnayan sa support",
+    "contactTitle": "Makipag-ugnayan sa support",
+    "contactWhen": "Kailan makikipag-ugnayan sa support",
+    "fixGuide": "Gabay sa pag-aayos",
+    "kicker": "Help Center",
+    "noResults": "Walang tumugma. Subukan ang ibang mga salita — hal. “trial”, “print”, o “sign in”.",
+    "results": "{count, plural, one {# resulta} other {# resulta}} para sa “{query}”",
+    "searchAria": "Maghanap sa help center",
+    "searchPlaceholder": "Maghanap sa help center — hal. “cancel subscription”, “magic link”, “print contract”…",
+    "stepsTitle": "Ayusin — ayon sa pagkakasunod",
+    "stillStuck": "Hindi pa rin maayos?",
+    "sub": "Hanapin ang mga gabay sa ibaba, o mag-browse ayon sa paksa. Karamihan sa mga problema ay nalulutas ng seksyon ng troubleshooting — kung hindi, ang contact form sa ibaba ay makakarating sa isang tao.",
+    "symptoms": "Mga Sintomas",
+    "title": "Paano ka namin matutulungan?",
+    "topics": [
+      {
+        "blurb": "Kung ano ang Violation Scout at paano magsimula.",
+        "id": "getting-started",
+        "items": [
+          {
+            "a": "Ang Violation Scout ay isang driving-for-dollars lead tool para sa mga real-estate wholesaler: mag-pin ng mga sira-sirang property sa mapa, i-log ang mga pinaghihinalaang code violation, saliksikin ang mga may-ari sa pamamagitan ng mga opisyal na public record, at gumawa ng mga draft ng wholesale assignment contract — lahat sa iisang lugar. Hawaiʻi-first ito (ang research workflow at contract template ay naka-default sa mga record ng Honolulu at mga disclosure ng Hawaiʻi), pero kahit sino sa mundo ay maaaring mag-subscribe at gumamit nito.",
+            "q": "Ano ang Violation Scout?"
+          },
+          {
+            "a": "Mag-sign up gamit ang email mo at i-click ang magic sign-in link na ipinadala namin sa email mo. Pagkatapos, sa Billing page, i-click ang “Magsimula nang libre” — magsisimula agad ang 14-araw na trial mo, hindi kailangan ng credit card. Mga 3 araw bago matapos ang trial, padadalhan ka namin ng paalala sa email; magdagdag ng paraan ng pagbabayad sa Billing page bago mag-expire ang trial para manatili ang access mo. Kung wala kang gagawin, awtomatikong magtatapos ang access mo at hindi ka kailanman sisingilin.",
+            "q": "Paano ko sisimulan ang libreng trial ko?"
+          },
+          {
+            "a": "Hindi. Gumagana ang Violation Scout sa anumang modernong web browser at ginawa itong phone-friendly, kaya maaari kang mag-log ng mga property mula sa field gamit ang phone mo nang walang ini-install.",
+            "q": "Kailangan ko bang mag-install ng app?"
+          },
+          {
+            "a": "Oo. Gumagana ang mapa, lead logging, at mga kontrata kahit saan sa mundo — nagsisimula ang mapa sa Oʻahu pero maaari mong i-pan at i-zoom sa anumang market. Naka-default ang research checklist sa mga public record ng City & County of Honolulu, pero sa Dashboard → Settings maaari kang lumipat sa Custom na region at ituro ang checklist sa mga site ng tax assessor at code-enforcement ng county mo. May Generic template din ang contract generator na may state-neutral na pananalita para gamitin sa labas ng Hawaiʻi.",
+            "q": "Gumagana ba ito sa labas ng Hawaiʻi?"
+          },
+          {
+            "a": "Hindi. Ang Violation Scout ay nagbibigay ng pangkalahatang impormasyon at mga template ng dokumento para sa layuning pang-edukasyon. Iba-iba ang mga patakaran sa wholesaling ayon sa estado. Sa Hawaiʻi, i-market ang iyong contractual/equitable interest (hindi ang property na hindi mo pag-aari), gumamit ng mga assignable contract na may malinaw na disclosure, at dapat suriin ng lisensyadong Hawaiʻi attorney ang anumang kontrata bago may pumirma.",
+            "q": "Pareho ba ang paggamit ng app na ito sa pagkuha ng legal advice?"
+          },
+          {
+            "a": "Available ang interface sa English, Spanish (Español), at Tagalog. Palitan ang wika anumang oras mula sa menu sa top navigation — maaalala ang pinili mo. Nananatili sa English ang mga ginawang dokumento ng kontrata, dahil iyon ang wikang gagamitin sa pag-review at pagpapatupad sa mga ito.",
+            "q": "Anong mga wika ang sinusuportahan ng app?"
+          }
+        ],
+        "title": "Pagsisimula"
+      },
+      {
+        "blurb": "Paglalagay ng mga pin at pagkuha ng mga lead sa field.",
+        "id": "map-logging",
+        "items": [
+          {
+            "a": "Buksan ang tab na Map at i-click (o i-tap) ang kahit saang bahagi ng mapa para maglagay ng pin. Bubukas ang isang form — ilagay ang address, ang mga distress note mo, anumang pinaghihinalaang violation, at isang priority, saka i-save. Lalabas ang pin sa mapa at idadagdag ang lead sa log mo.",
+            "q": "Paano ako mag-log ng property mula sa mapa?"
+          },
+          {
+            "a": "Hindi. Gumagamit ang mapa ng libreng OpenStreetMap tiles sa pamamagitan ng Leaflet, kaya walang kailangang i-configure at walang key na babayaran.",
+            "q": "Kailangan ko ba ng Google Maps API key?"
+          },
+          {
+            "a": "Sumusunod ang mga kulay ng pin sa status ng lead: New (amber), Researching (blue), Contacted (purple), Offer made (orange), Under contract (green), Assigned (dark green), Dead (gray). Baguhin ang status ng lead sa Lead log at awtomatikong magbabago ang kulay ng pin nito.",
+            "q": "Ano ang ibig sabihin ng mga kulay ng pin?"
+          },
+          {
+            "a": "Oo — ginawa para sa mga phone ang mapa at logging form. Para sa kaligtasan, ang pasahero ang mag-log ng mga property o huminto muna bago i-tap ang mapa.",
+            "q": "Maaari ko bang gamitin ang mapa sa phone ko habang nagda-driving for dollars?"
+          },
+          {
+            "a": "Tingnan ang troubleshooting guide na “Map tiles not loading” sa ibaba — ipinapaliwanag nito nang sunud-sunod ang mga karaniwang sanhi (connection, ad blockers, cached tiles).",
+            "q": "Blanko ang mapa o hindi naglo-load ang mga tile. Ano ang gagawin ko?"
+          }
+        ],
+        "title": "Mapa at pag-log ng mga property"
+      },
+      {
+        "blurb": "Pamamahala, pag-uuri, at pag-export ng mga lead mo.",
+        "id": "lead-log",
+        "items": [
+          {
+            "a": "New lead (kalalagay lang) → Researching (ginagawa ang checklist) → Contacted (nakontak ang may-ari) → Offer made → Under contract → Assigned (na-wholesale ang kontrata sa buyer). Markahan ang lead bilang Dead kapag hindi na sulit sundan. Ang mga status ang nagdidikta sa mga kulay ng pin sa mapa.",
+            "q": "Ano ang ibig sabihin ng mga status ng lead?"
+          },
+          {
+            "a": "Ikaw ang magtatakda ng mga priority (low / medium / high) — halimbawa, high para sa mga halatang bakanteng o sirang-sirang property na gusto mong saliksikin muna. Hindi nito binabago ang kilos ng app; tinutulungan ka nitong ayusin ang atensyon mo.",
+            "q": "Paano ko gagamitin ang mga priority?"
+          },
+          {
+            "a": "Oo. Sa tab na Leads, i-click ang “Export CSV” para i-download ang lahat ng lead mo bilang CSV file, na mabubuksan sa Excel o Google Sheets.",
+            "q": "Maaari ko bang i-export ang mga lead ko sa spreadsheet?"
+          },
+          {
+            "a": "Oo — gamitin ang mga aksyon na Edit at Delete sa lead log. Permanente ang pagbubura at hindi na ito maibabalik, kaya hihingi muna ng kumpirmasyon ang app.",
+            "q": "Maaari ko bang i-edit o burahin ang isang lead?"
+          },
+          {
+            "a": "Tingnan ang troubleshooting guide na “Logged data not appearing” sa ibaba.",
+            "q": "Nag-save ako ng lead pero hindi ito lumalabas."
+          }
+        ],
+        "title": "Lead log"
+      },
+      {
+        "blurb": "Paghahanap ng mga may-ari at pagsusuri ng mga violation sa pamamagitan ng mga opisyal na record.",
+        "id": "research",
+        "items": [
+          {
+            "a": "Buksan ang tab na Research, piliin ang lead, at gawin ang checklist. Ang mga unang hakbang ay nagli-link sa mga opisyal na lookup para sa nakatakda mong region — ang Real Property Assessment Division (RPAD) ng Honolulu bilang default. Maghanap ayon sa address o TMK at itala ang pangalan ng may-ari at mailing address nang eksakto tulad ng ipinapakita, saka i-cross-check sa pangalawang source.",
+            "q": "Paano ko malalaman kung sino ang may-ari ng isang property?"
+          },
+          {
+            "a": "Oo. Pumunta sa Dashboard → Settings at palitan ang region mo sa Custom, saka ilagay ang lookup URL ng tax assessor ng county mo at ang code-enforcement/violations URL. Ang mga checklist para sa mga lead na idadagdag mo mula noon ay magdi-deep-link sa mga site ng county mo sa halip na sa mga site ng Honolulu. Panatilihin ng mga kasalukuyang lead ang orihinal nilang mga link.",
+            "q": "Maaari ko bang gamitin ang research checklist sa labas ng Hawaiʻi?"
+          },
+          {
+            "a": "Walang public API ang Honolulu para sa datos ng pagmamay-ari o violation, kaya walang app na makakakuha nito sa isang click. Sa halip, idini-deep-link ka ng checklist sa mga opisyal na lookup page, at sinusubaybayan nito ang mga nakumpirma mo na.",
+            "q": "Bakit hindi awtomatikong makakapag-lookup ng mga may-ari ang app?"
+          },
+          {
+            "a": "Ang suspected ay ang field observation mo (hal. “junk vehicles sa bakuran, posibleng violation”). Ang confirmed ay nangangahulugang nakita mo ito sa isang opisyal na record, tulad ng notice of violation o permit status sa HNL Build. Panatilihing magkahiwalay ang dalawa — may nakalaang hakbang ang research checklist para sa pagkumpirma nang may ebidensya.",
+            "q": "Ano ang pagkakaiba ng suspected at confirmed na mga violation?"
+          },
+          {
+            "a": "Nililimitahan ng Lungsod ang mga detalyadong record ng violation sa applicant. Nagli-link ang checklist ng app sa records page ng DPP, kung saan maaari kang maghanap muna sa HNL Build ayon sa address o TMK; para sa mga record na lampas sa listing, magsumite ng request sa Data Access and Imaging Branch (dppdaib@honolulu.gov).",
+            "q": "Hindi ipinapakita ng HNL Build ang buong detalye ng violation. Bakit?"
+          },
+          {
+            "a": "May hakbang ng skip-tracing ang checklist, pero gagamitin mo ang sarili mong skip-tracing service para sa paghahanap ng phone at email. I-log ang source at petsa ng anumang makita mo — huwag huhulaan ang contact info.",
+            "q": "Dapat ba akong mag-skip-trace sa loob ng app?"
+          }
+        ],
+        "title": "Research workflow"
+      },
+      {
+        "blurb": "Pagsusuri ng mga property na hindi mo mabisita nang personal.",
+        "id": "remote",
+        "items": [
+          {
+            "a": "Buksan ang lead sa tab na Research at gamitin ang seksyon ng Photos & remote evaluation: mag-upload ng mga larawang ipinadala sa iyo ng contact, i-save ang virtual tour link (isang video walkthrough o recording ng video call), at punan ang condition report — isang structured na exterior/interior checklist na sumasaklaw sa bubong, mga dingding, bintana, pinto, bakuran, mga structural issue, mga senyales ng pagiging bakante, at mga utility. Bawat item ay nire-rate na good, fair, o poor na may espasyo para sa mga note.",
+            "q": "Hindi ko mabisita ang isang property nang personal. Paano ko ito masusuri?"
+          },
+          {
+            "a": "Mga image file (JPEG, PNG, WebP, at katulad) hanggang 8 MB bawat isa, na may hanggang 12 larawan bawat property. Magdagdag ng caption sa bawat larawan para matandaan mo kung ano ang ipinapakita nito.",
+            "q": "Anong mga format at laki ng larawan ang sinusuportahan?"
+          },
+          {
+            "a": "Ikaw lang — pribado sa account mo ang mga larawan, tulad ng mga lead mo. Hindi ito kailanman ibabahagi sa ibang mga subscriber.",
+            "q": "Sino ang makakakita ng mga larawang ina-upload ko?"
+          }
+        ],
+        "title": "Remote evaluation"
+      },
+      {
+        "blurb": "Paggawa ng mga draft ng wholesale assignment contract.",
+        "id": "contracts",
+        "items": [
+          {
+            "a": "Isang draft ng wholesale assignment contract na pre-filled sa property, seller, presyo, earnest money, assignment fee, at mga detalye ng closing na ilalagay mo. Pipili ka ng template kapag ginagawa ang draft: Hawaiʻi (na may mga disclosure na angkop sa Hawaiʻi tulad ng intensyon mong i-assign ang kontrata para sa fee) o Generic, na may state-neutral na pananalita para sa mga property sa ibang mga estado. Bawat draft ay may watermark na DRAFT ONLY.",
+            "q": "Ano ang nililikha ng contract generator?"
+          },
+          {
+            "a": "Hindi — hindi kumukuha ang app ng mga e-signature. Gawin ang draft, i-print ito (o i-save bilang PDF), at kumuha ng mga pirma sa papel o gamit ang sarili mong e-signature tool.",
+            "q": "Maaari bang pumirma ang seller sa loob ng app?"
+          },
+          {
+            "a": "Sa tab na Contracts, i-click ang “Preview & print” sa draft. Sa print view, gamitin ang print dialog ng browser mo (Ctrl/Cmd + P) at piliin ang “Save as PDF” bilang destination. Kung mukhang hindi tama ang layout, tingnan ang troubleshooting guide na “Contract not printing correctly.”",
+            "q": "Paano ko ipi-print o ise-save ang isang kontrata bilang PDF?"
+          },
+          {
+            "a": "Hindi. Panimulang draft ito, hindi kapalit ng kasunduang ginawa ng attorney. Ang mga draft ng Hawaiʻi template ay kailangang suriin ng lisensyadong Hawaiʻi real-estate attorney; ang mga draft ng Generic template ay kailangang suriin ng lisensyadong real-estate attorney sa estado kung nasaan ang property, dahil iba-iba ang mga patakaran sa wholesaling ayon sa estado. Walang sinumang dapat umasa o pumirma rito bago ang review na iyon.",
+            "q": "Handa na bang gamitin ang ginawang kontrata nang walang pagbabago?"
+          },
+          {
+            "q": "Ano ang attorney review?",
+            "a": "Sa anumang contract draft, i-click ang “Humingi ng attorney review.” I-e-email namin ang mga detalye ng iyong draft sa aming ka-partner na real estate attorney sa Hawaiʻi at ipakikilala ka bilang potensyal na kliyente. Direktang makikipag-ugnayan sa iyo ang attorney para suriin ito — hindi ibinabahagi ng app ang iyong data sa iba."
+          },
+          {
+            "q": "Magkano ang attorney review?",
+            "a": "Direkta at hiwalay kang sisingilin ng attorney — hindi kasama sa iyong Violation Scout subscription ang bayad sa review. Kumpirmahin ang bayad sa attorney bago siya magsimula."
+          },
+          {
+            "q": "Nagiging abogado ko na ba ang attorney kapag humiling ako ng review?",
+            "a": "Hindi. Ang iyong kahilingan ay pagpapakilala lamang. Ang ugnayang attorney-client ay nagsisimula lamang kapag tinanggap ng attorney ang iyong engagement sa ilalim ng kanyang sariling mga tuntunin."
+          },
+          {
+            "q": "Maaari ba akong humiling ulit ng review pagkatapos baguhin ang draft?",
+            "a": "Oo. Kapag nakahiling na, ang button ay nagiging badge na “Nakahiling na ng review.” Kung binago mo ang draft, gamitin ang opsyon sa muling pagpapadala para i-email ang updated na bersyon sa attorney."
+          }
+        ],
+        "title": "Mga Kontrata"
+      },
+      {
+        "blurb": "Trial, presyo ($39/mo pagkatapos ng 14-day free trial), at mga pagkansela.",
+        "id": "billing",
+        "items": [
+          {
+            "a": "Pagkatapos ng 14-day free trial mo, $39/mo ang subscription, buwanang sinisingil sa pamamagitan ng Stripe. Walang per-lead fee, credit pack, o add-on.",
+            "q": "Magkano ang Violation Scout?"
+          },
+          {
+            "a": "Pumunta sa Billing page at i-click ang “Manage subscription” para buksan ang Stripe Customer Portal, saka magkansela doon. Magpapatuloy ang access mo hanggang sa katapusan ng kasalukuyang billing period, at hindi ka na macha-charge ulit.",
+            "q": "Paano ko kakanselahin ang subscription ko?"
+          },
+          {
+            "a": "Mga 3 araw bago matapos ang trial mo, padadalhan ka namin ng paalala sa email. Kung nagdagdag ka ng paraan ng pagbabayad sa Billing page, sisingilin ka ng $39/mo kapag natapos ang trial at magiging aktibo ang subscription mo. Kung hindi ka nagdagdag, awtomatikong kakanselahin ang subscription mo — magtatapos ang access mo at hindi ka kailanman sisingilin.",
+            "q": "Ano ang mangyayari kapag natapos ang trial ko?"
+          },
+          {
+            "a": "Buksan ang Billing page → “Manage subscription” at i-update ang payment method mo sa Stripe Customer Portal. Kung hindi pa rin nareresolba ang payment, mapi-pause ang access mo sa dashboard hanggang maging current ang billing — awtomatikong babalik ito kapag nagtagumpay ang payment.",
+            "q": "Nabigo ang payment ko. Ano ang gagawin ko?"
+          },
+          {
+            "a": "Oo — bawat bayad na subscription ay may 30-araw na garantiya ng money-back, walang tanong. Kung wala pang 30 araw mula sa pagbabayad mo, i-click ang “Humiling ng refund” sa Billing page o gamitin ang support form sa ibaba na may paksang refund. Ang mga refund ay manu-manong ibinibigay ng founder sa Stripe, karaniwan sa loob ng 5 araw ng negosyo, pabalik sa orihinal mong paraan ng pagbabayad.",
+            "q": "Nag-aalok ba kayo ng mga refund?"
+          },
+          {
+            "a": "Magsisimula ang trial mo sa sandaling i-click mo ang “Magsimula nang libre” — subukang i-reload ang page. Kung inactive pa rin pagkatapos ng ilang minuto, tiyaking naka-sign in ka gamit ang parehong email na ginamit mo sa pagsisimula ng trial, saka makipag-ugnayan sa support.",
+            "q": "Sinimulan ko na ang trial ko pero inactive pa rin ang dashboard ko."
+          },
+          {
+            "q": "Makakatanggap ba ako ng paalala bago matapos ang trial ko?",
+            "a": "Oo. Mga 3 araw bago mag-expire ang trial mo, padadalhan ka namin ng email sa sign-in address mo na may link para magdagdag ng paraan ng pagbabayad. Awtomatiko ang paalala — pero nasa sa iyo ang pagdaragdag ng card mo."
+          }
+        ],
+        "title": "Billing at subscription"
+      },
+      {
+        "blurb": "Mga magic link, pagpapalit ng email, at ang datos mo.",
+        "id": "account",
+        "items": [
+          {
+            "a": "Gumagamit ang Violation Scout ng passwordless sign-in. Ilagay ang email mo sa sign-in page at padadalhan ka namin ng magic link sa email — i-click ito at naka-sign in ka na. Walang password na kailangang tandaan o i-reset.",
+            "q": "Paano ako magsa-sign in? Hindi ako kailanman nagtakda ng password."
+          },
+          {
+            "a": "Tingnan ang troubleshooting guide na “Magic-link email not arriving” sa ibaba.",
+            "q": "Hindi ko natanggap ang magic link email ko."
+          },
+          {
+            "a": "Hindi pa ito self-service — makipag-ugnayan sa support kasama ang kasalukuyan at bagong email address mo at ililipat namin ang account at mga lead mo.",
+            "q": "Maaari ko bang baguhin ang email address sa account ko?"
+          },
+          {
+            "a": "Makipag-ugnayan sa support at humingi ng account deletion. Permanenteng buburahin namin ang user record mo at lahat ng kaugnay na lead, research item, at contract draft.",
+            "q": "Paano ko buburahin ang account at datos ko?"
+          },
+          {
+            "a": "Pumunta sa Dashboard → Settings. Piliin ang Hawaiʻi (ang default, na gumagamit ng mga lookup ng RPAD at HNL Build ng Honolulu) o Custom, kung saan ilalagay mo ang mga lookup URL ng tax assessor ng county mo at ng code-enforcement. Ang pagbabago ay ilalapat sa mga research checklist para sa mga lead na idadagdag mo pagkatapos; panatilihin ng mga kasalukuyang lead ang orihinal nilang mga link.",
+            "q": "Saan ko babaguhin ang research region ko?"
+          },
+          {
+            "a": "Oo. Lahat ng property, research note, at contract draft ay limitado sa account mo — hindi ito makikita ng ibang mga subscriber. Tingnan ang Privacy Policy para sa mga detalye.",
+            "q": "Pribado ba ang lead data ko?"
+          },
+          {
+            "q": "Sino ang may-ari ng datos na inilalagay ko sa Violation Scout?",
+            "a": "Ikaw. Hindi namin kailanman ibinebenta ang datos mo kaninuman, sa anumang dahilan. Maaari mong i-export ang buong lead log mo sa CSV anumang oras mula sa dashboard, magkansela sa isang click mula sa Billing page, at hilingin sa support na permanenteng burahin ang datos ng account mo."
+          }
+        ],
+        "title": "Account at sign-in"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "causes": [
+          "Walang internet connection o napakabagal na connection (karaniwan sa field).",
+          "May ad blocker, privacy extension, o VPN na humaharang sa tile server.",
+          "Mga lumang cached tile o natigil na map session."
+        ],
+        "contactWhen": "Kung hindi pa rin naglo-load ang mga tile sa dalawang magkaibang network na naka-disable ang mga extension, makipag-ugnayan sa support at sabihin sa amin ang device mo, browser mo, at kung gumagana ang iba pang bahagi ng app.",
+        "id": "map-tiles",
+        "steps": [
+          "Suriin ang connection mo: mag-load ng anumang ibang website. Kung nasa field ka na may mahinang signal, lumipat sa lugar na may mas magandang reception at i-reload.",
+          "I-hard-refresh ang page (Ctrl/Cmd + Shift + R).",
+          "Pansamantalang i-disable ang mga ad blocker o privacy extension para sa site na ito, saka i-reload.",
+          "Kung naka-VPN ka, idiskonekta ito at subukang muli — may ilang VPN exit na ni-rate-limit ng mga tile provider.",
+          "I-clear ang browser cache mo para sa site na ito, o subukan ang private/incognito window.",
+          "Subukan ang ibang network (hal. lumipat mula Wi-Fi patungo sa mobile data) para malaman kung may network-level block."
+        ],
+        "symptoms": [
+          "Kulay-abo o blanko ang lugar ng mapa, o may mensaheng “tiles unavailable”.",
+          "Hindi lumalabas ang mga kalye at satellite imagery, kahit maghintay."
+        ],
+        "title": "Map tiles not loading"
+      },
+      {
+        "causes": [
+          "Napunta ang email sa spam/junk o sa Promotions tab.",
+          "May typo sa email address na inilagay mo.",
+          "Mga corporate o school email filter na nag-quarantine ng automated mail.",
+          "Paghiling ng ilang link nang sunud-sunod — ang pinakabagong link lang ang gumagana, at ang mabilisang pag-uulit ay maaaring mukhang abuse sa mga filter."
+        ],
+        "contactWhen": "Kung walang link na dumadating pagkatapos ng 15 minuto sa dalawang magkaibang email address, makipag-ugnayan sa support kasama ang email address na sinusubukan mong gamitin (huwag mag-paste ng anumang link code).",
+        "id": "magic-link",
+        "steps": [
+          "Maghintay ng 5 minuto — paminsan-minsan ay mabagal ang delivery ng email.",
+          "Tingnan ang spam/junk at anumang Promotions o Updates tab, at hanapin ang sender address.",
+          "Kumpirmahin na tama ang na-type mong email, saka humiling ng isang bagong link at gamitin ang pinakabagong email lang.",
+          "Kung gumagamit ka ng work o school address, subukan ang personal na address — kadalasang hinaharang ng mga corporate filter ang automated mail.",
+          "Idagdag ang sender address sa mga contact mo at humiling ng isa pang link."
+        ],
+        "symptoms": [
+          "Humiling ka ng sign-in link pero walang email na dumadating sa loob ng ilang minuto.",
+          "Sinasabi ng sign-in page na naipadala ang link, pero walang laman ang inbox mo."
+        ],
+        "title": "Magic-link email not arriving"
+      },
+      {
+        "causes": [
+          "Hindi pa nakakarating sa app ang confirmation webhook ng Stripe (karaniwan ay mga segundo, paminsan-minsan ay mga minuto).",
+          "Isinara o kinansela ang checkout bago natapos ang payment.",
+          "Nag-checkout ka gamit ang ibang email kaysa sa account mo."
+        ],
+        "contactWhen": "Kung nagsimula ka ng trial sa nakaraang 14 na araw at hindi pa rin nagpapakita ng subscription ang Billing page pagkatapos ng 15 minuto, makipag-ugnayan sa support gamit ang email na ginamit mo sa pag-sign up.",
+        "id": "subscription-status",
+        "steps": [
+          "Maghintay ng 2–3 minuto, saka i-reload ang Billing page.",
+          "Tiyaking naka-sign in ka gamit ang parehong email na ginamit mo sa pagsisimula ng trial.",
+          "Kung nagsimula ang trial mahigit 14 araw na ang nakalipas nang hindi nagdaragdag ng paraan ng pagbabayad, nag-expire na ito — magsimula ng bagong trial mula sa Billing page kung hindi ka pa nagkaroon noon."
+        ],
+        "symptoms": [
+          "Sinimulan mo na ang libreng trial mo pero hindi pa rin nagpapakita ng aktibong subscription ang Billing page.",
+          "Nire-redirect ka pabalik sa Billing page kapag binubuksan ang dashboard."
+        ],
+        "title": "Hindi nag-a-update ang status ng trial o subscription"
+      },
+      {
+        "causes": [
+          "Na-decline ng bangko mo ang card (hindi sapat na pondo, fraud hold, international block).",
+          "Expired na card o maling na-type na detalye ng card.",
+          "Mga browser extension na nakikialam sa Stripe popup."
+        ],
+        "contactWhen": "Kung dalawang magkaibang valid na card ang nabigo at sinabi ng bangko mo na walang naka-block, makipag-ugnayan sa support kalakip ang eksaktong error message na ipinapakita ng Stripe.",
+        "id": "checkout-errors",
+        "steps": [
+          "I-double-check ang numero ng card, expiry, at CVC, at kumpirmahing tugma ang billing ZIP sa records ng bangko mo.",
+          "Sumubok ng ibang card, o tawagan ang numero sa likod ng card mo — kadalasan kailangan lang ng bangko na aprubahan mo ang charge.",
+          "I-disable ang ad blockers sa Stripe page at sumubok muli sa private/incognito window."
+        ],
+        "symptoms": [
+          "Nagpapakita ng error ang pagdaragdag o pag-update ng card mo sa Stripe Customer Portal.",
+          "Nadedecline ang card mo kapag naging bayad na subscription ang trial."
+        ],
+        "title": "Mga error sa paraan ng pagbabayad"
+      },
+      {
+        "causes": [
+          "Talagang nabigo ang pag-save (hal. naputol ang connection) — nagpapakita ang app ng alert sa kasong iyon.",
+          "Naka-sign in ka gamit ang ibang email kaysa sa ginamit mo sa paggawa ng datos.",
+          "May lumang page na nagpapakita ng cached content."
+        ],
+        "contactWhen": "Kung hindi pa rin lumalabas ang datos pagkatapos mag-reload sa magandang connection, makipag-ugnayan sa support kasama ang address o pangalan ng kontrata at kung kailan mo ito humigit-kumulang na-save.",
+        "id": "data-missing",
+        "steps": [
+          "I-reload ang page — muling kinukuha ng dashboard ang datos mo kapag nag-load.",
+          "Tingnan kung may lumabas na error alert noong nag-save ka. Kung sinabi nitong “Save failed”, malamang ay naputol ang connection mo; subukang muli sa stable na connection.",
+          "Kumpirmahin na naka-sign in ka gamit ang parehong email na orihinal mong ginamit (pribado sa bawat account ang mga lead).",
+          "Para sa nawawalang map pin, tingnan ang tab na Leads — maaaring na-save ang lead nang walang coordinates."
+        ],
+        "symptoms": [
+          "Nag-save ka ng property, research note, o kontrata pero hindi ito lumalabas sa listahan.",
+          "Nagpakita ang app ng error o mensaheng “Save failed”."
+        ],
+        "title": "Logged data not appearing"
+      },
+      {
+        "causes": [
+          "Ang browser print scaling o margins na pumuputol sa dokumento.",
+          "Naka-disable ang background graphics, kaya nakatago ang mga shaded section.",
+          "Nagpi-print mula sa dashboard sa halip na sa nakalaang print view."
+        ],
+        "contactWhen": "Kung mukhang sira mismo ang print view sa screen (hindi lang sa papel), makipag-ugnayan sa support kasama ang browser mo at paglalarawan kung ano ang mali — ligtas pa rin ang draft mo sa tab na Contracts.",
+        "id": "contract-print",
+        "steps": [
+          "Palaging mag-print mula sa nakalaang print view: tab na Contracts → “Preview & print.” Huwag i-print ang dashboard page mismo.",
+          "Sa print dialog, itakda ang Destination sa “Save as PDF” (o ang printer mo), at ang Margins sa “Default.”",
+          "I-enable ang “Background graphics” sa mga opsyon ng print dialog — kailangan ito ng draft banner at mga shaded block.",
+          "Kung naputol ang content, subukan ang ibang scale (hal. 90%) o lumipat sa Portrait at Landscape.",
+          "Subukan ang ibang browser (ang print-to-PDF ng Chrome ang pinaka-maaasahan)."
+        ],
+        "symptoms": [
+          "Ang naka-print na kontrata ay naputol, may kulang na mga page, o mukhang sira ang layout.",
+          "Ang “Save as PDF” ay gumagawa ng blanko o bahagyang dokumento."
+        ],
+        "title": "Contract not printing correctly"
+      }
+    ],
+    "troubleshootingSub": "Sunud-sunod na mga pag-aayos para sa mga pinakakaraniwang problema. Gawin ang mga hakbang ayon sa pagkakasunod — karamihan sa mga isyu ay nareresolba sa hakbang 3 o 4.",
+    "troubleshootingTitle": "Pag-troubleshoot"
+  },
+  "landing": {
+    "badge": "Ginawa para sa mga wholesaler ng Hawaiʻi",
+    "ctaHow": "Tingnan kung paano ito gumagana",
+    "ctaTrial": "Simulan ang {trial} mo",
+    "faqTitle": "Mga Tanong, Sinagot nang Direkta",
+    "faqs": [
+      {
+        "a": "I-mina-market ng mga wholesaler ang kanilang contractual (equitable) interest sa isang property, hindi ang property mismo, at isiniwalat ang intensyong i-assign ito para sa fee. Mahigpit at case-specific ang mga patakaran — makipag-usap sa Hawaiʻi real estate attorney bago ang unang deal mo. Kasama sa app na ito ang tamang mga disclosure pero hindi ito legal advice.",
+        "q": "Kailangan ko ba ng real estate license para mag-wholesale sa Hawaiʻi?"
+      },
+      {
+        "a": "Hindi — at hindi rin ang mga $99/month na tool, sa totoo lang. Walang inilalathalang API ang Honolulu para dito. Sa halip ay makakakuha ka ng one-tap na mga link sa opisyal na county tax record at DPP lookup, kasama ang checklist na pinaghihiwalay ang mga nakumpirmang natuklasan sa mga hinala.",
+        "q": "Awtomatikong hinahanap ba ng app ang mga may-ari at violation?"
+      },
+      {
+        "a": "Nagla-license ang malalaking platform ng nationwide na mga data feed at ipinapasa ang gastos sa iyo. Sadyang mas simple ang tool na ito: field logging, research workflow at mga kontrata, na nakatuon sa mga wholesaler ng Hawaiʻi na sila mismo ang nagda-driving for dollars.",
+        "q": "Bakit $39 samantalang $99+ ang singil ng mga kakompetensya?"
+      },
+      {
+        "a": "Oo. Buwan-buwan, magkansela mula sa billing page sa isang click. Walang taunang lock-in, walang cancellation fee, walang retention maze.",
+        "q": "Maaari ba akong magkansela anumang oras?"
+      }
+    ],
+    "features": [
+      {
+        "body": "Nagda-drive sa neighborhood? Maglagay ng pin sa sandaling makakita ka ng sirang-sirang property. Walang API key, walang setup — gumagana lang ang mapa, kahit sa phone mo.",
+        "title": "I-pin ito sa mapa"
+      },
+      {
+        "body": "Bawat pin ay nagiging lead row: address, distress note, pinaghihinalaang violation, priority, mga petsa ng follow-up at status — isang spreadsheet na naka-sync sa mapa mo.",
+        "title": "I-log ito tulad ng pro"
+      },
+      {
+        "body": "Ginagabayan ka ng checklist sa mga opisyal na public record ng Honolulu — RPAD tax rolls para sa pagmamay-ari, HNL Build para sa mga permit at violation — at sinusubaybayan kung ano ang confirmed kumpara sa pinaghihinalaan pa lang.",
+        "title": "Saliksikin ang may-ari at mga violation"
+      },
+      {
+        "body": "Gawing draft ng wholesale assignment contract ang nasaliksik na lead sa loob ng ilang minuto, na may mga disclosure na angkop sa Hawaiʻi. I-print ito, suriin ito kasama ang attorney mo, papirmahan ito.",
+        "title": "Gawin ang assignment contract"
+      }
+    ],
+    "hero": "Driving for dollars, mula sa driver's seat hanggang sa closing table.",
+    "howTitle": "Mula lead hanggang kontrata sa apat na hakbang",
+    "perMonth": "/buwan",
+    "planBullets": [
+      "{trial} — magkansela bago ito matapos at wala kang babayaran",
+      "Walang limitasyong mga property, pin at lead row",
+      "Mapa + lead log + mga research checklist",
+      "Wholesale assignment contract generator",
+      "Buwan-buwan, magkansela anumang oras sa isang click"
+    ],
+    "pricingSub": "Ang mga national tool ay nagsisimula sa $99/month at sinusukat ang lahat. Isang plan, isang presyo.",
+    "pricingTitle": "Simple, tapat na presyo",
+    "sub": "Makahita ng sirang-sirang property sa Nanakuli, i-pin ito sa mapa, i-log ang nakikita mo, saliksikin ang may-ari sa pamamagitan ng mga opisyal na county record, at gawin ang wholesale assignment contract mo — isang simpleng daloy, {price} pagkatapos ng {trial}.",
+    "trialNote": "Magsimula nang libre — hindi kailangan ng credit card. Kanselahin anumang oras.",
+    "attorneyLine": "Ikokonekta ka ng Violation Scout sa isang real estate attorney sa Hawaiʻi para sa contract review.",
+    "attorneySub": "Sa isang click, ipapadala ang anumang draft para sa propesyonal na pagsusuri. Ang mga draft ay draft lamang hanggang sa masuri — ang ugnayang attorney-client ay nagsisimula lamang kapag kinuha mo ang attorney.",
+    "guaranteeNote": "30-araw na garantiya ng money-back — walang tanong.",
+    "sampleCta": "Tingnan ang sample na kontrata",
+    "dataTitle": "Ang datos mo ay sa iyo",
+    "dataSub": "Ang iyong pipeline ang iyong kabuhayan. Ganoon namin ito tratuhin.",
+    "dataBullets": [
+      "Hindi namin kailanman ibinebenta ang datos mo — kaninuman, sa anumang dahilan.",
+      "I-export ang lahat sa CSV anumang oras, diretso mula sa lead log.",
+      "Magkansela sa isang click mula sa Billing page — walang tawag, walang pasikut-sikot.",
+      "Gusto mong mabura ang lahat? Makipag-ugnayan sa support at buburahin namin ang datos ng account mo."
+    ],
+    "testimonialsTitle": "Mga success story ng mga wholesaler",
+    "testimonialsSub": "Mga tunay na deal mula sa mga tunay na subscriber.",
+    "testimonialsEmptyTitle": "Maging ang aming unang success story",
+    "testimonialsEmptyBody": "Nakasarado ka ba ng deal gamit ang Violation Scout? Gusto naming itampok ang iyong kuwento — nang may pahintulot mo, siyempre.",
+    "testimonialsEmptyCta": "Ibahagi ang iyong success story"
+  },
+  "leadTable": {
+    "delete": "Burahin",
+    "deleteConfirm": "Buburahin ang lead na ito?",
+    "edit": "I-edit",
+    "empty": "Wala pang mga lead. Maglagay ng pin sa tab na Map o idagdag ang unang property mo para simulan ang log mo.",
+    "emptyGuide": "Gabay sa lead log",
+    "exportCsv": "I-export ang CSV",
+    "headers": {
+      "actions": "Mga Aksyon",
+      "address": "Address",
+      "followUp": "Follow-up",
+      "owner": "May-ari",
+      "priority": "Priority",
+      "status": "Status"
+    },
+    "noOwner": "—",
+    "research": "Magsaliksik"
+  },
+  "meta": {
+    "billingTitle": "Billing — Violation Scout",
+    "dashboardTitle": "Dashboard — Violation Scout",
+    "helpDescription": "Mga sagot, troubleshooting guide, at support para sa Violation Scout: pag-log sa mapa, pamamahala ng lead, pananaliksik, mga kontrata, at billing.",
+    "helpTitle": "Help Center — Violation Scout",
+    "landingDescription": "Mag-pin ng mga sirang-sirang property sa mapa, mag-log ng mga lead ng code-violation, saliksikin ang mga may-ari sa pamamagitan ng mga opisyal na public record ng Hawaiʻi, at gumawa ng mga wholesale assignment contract — sa isang simpleng tool.",
+    "landingTitle": "Violation Scout — Driving for Dollars, Ginawa para sa Hawaiʻi",
+    "loginTitle": "Mag-sign in — Violation Scout",
+    "settingsTitle": "Mga setting ng region — Violation Scout",
+    "signupTitle": "Simulan ang libreng trial mo — Violation Scout",
+    "sampleContractTitle": "Sample na wholesale assignment contract | Violation Scout",
+    "sampleContractDescription": "Tingnan kung ano mismo ang itsura ng wholesale assignment draft ng Violation Scout — hindi kailangan mag-sign up.",
+    "guidesTitle": "Mga gabay sa wholesaling | Violation Scout",
+    "guidesDescription": "Mga libreng gabay na nakatuon sa Hawaiʻi: assignment contracts, compliance sa wholesaling, pagbabasa ng violation notices, at pakikipag-usap sa mga seller."
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "help": "Tulong",
+    "language": "Wika",
+    "pricing": "Presyo",
+    "settings": "Mga Setting",
+    "signIn": "Mag-sign in",
+    "signOut": "Mag-sign out",
+    "startTrial": "Simulan ang libreng trial"
+  },
+  "pricing": {
+    "price": "${price}/buwan",
+    "trial": "{days}-araw na libreng trial"
+  },
+  "propertyForm": {
+    "addLead": "Magdagdag ng lead",
+    "address": "Address ng property *",
+    "addressPlaceholder": "87-1234 Farrington Hwy",
+    "cancel": "Kanselahin",
+    "city": "Lungsod",
+    "distressNotes": "Ang nakita mo (mga distress note)",
+    "distressPlaceholder": "Nakapabayaang bakuran, nakatakip na mga bintana, naipong mail…",
+    "followUp": "Follow up",
+    "pinnedAt": "Inilagay ang pin sa {lat}, {lng}",
+    "priority": "Priority",
+    "saveChanges": "I-save ang mga pagbabago",
+    "saving": "Nagse-save…",
+    "status": "Status",
+    "suspectedViolations": "Pinaghihinalaang mga code violation",
+    "tmk": "TMK",
+    "tmkPlaceholder": "1-8-7-…",
+    "violationsPlaceholder": "hal. unpermitted addition, junk vehicles — hinala lang hangga't hindi nakukumpirma sa pananaliksik",
+    "virtualTour": "Link ng virtual tour",
+    "virtualTourHint": "Isang recording ng video call, YouTube/Vimeo link, o Matterport tour na ibinahagi sa iyo ng contact.",
+    "virtualTourInvalid": "Maglagay ng valid na http(s) link, o iwanang blanko.",
+    "virtualTourPlaceholder": "https://… link sa video walkthrough",
+    "zip": "ZIP",
+    "zipPlaceholder": "96792"
+  },
+  "remote": {
+    "captionPlaceholder": "Caption…",
+    "close": "Isara",
+    "conditionSave": "I-save ang condition report",
+    "conditionSaveFailed": "Hindi na-save ang condition report. Pakisubukang muli.",
+    "conditionSaved": "Na-save ang condition report.",
+    "conditionSaving": "Nagse-save…",
+    "conditionSub": "Punan ito mula sa mga larawan, video walkthrough, o taong nasa site. Ikaw ang magdedesisyon sa mga rating — tandaan kung ano ang pinagbatayan mo.",
+    "conditionTitle": "Remote condition report",
+    "deletePhoto": "Burahin ang larawan",
+    "deletePhotoConfirm": "Buburahin ang larawang ito?",
+    "items": {
+      "doors": "Mga Pinto",
+      "roof": "Bubong",
+      "structural": "Mga nakikitang structural issue",
+      "utilities": "Mga utility na naka-on / naka-off",
+      "vacancy": "Mga senyales ng pagiging bakante",
+      "walls": "Mga dingding / siding",
+      "windows": "Mga Bintana",
+      "yard": "Bakuran / landscaping"
+    },
+    "maxPhotos": "Hanggang {max} larawan bawat property.",
+    "noPhotos": "Wala pang mga larawan. Mag-upload ng mga imaheng ipinadala sa iyo ng contact, bird dog, o agent.",
+    "notConfigured": "Hindi pa pinagana ang mga pag-upload ng larawan sa site na ito — kailangang magdagdag ng Vercel Blob token ang may-ari. Gumagana pa rin ang virtual tour link at condition report sa ibaba.",
+    "notesPlaceholder": "Mga note — ano ang nakita mo, at paano (larawan, video call, taong nasa site)?",
+    "photosTitle": "Mga Larawan",
+    "status": {
+      "fair": "Katamtaman",
+      "good": "Mabuti",
+      "poor": "Pangit",
+      "unchecked": "Hindi na-check"
+    },
+    "sub": "Hindi mabisita nang personal? Mag-upload ng mga larawang ipinadala sa iyo ng contact, mag-save ng virtual tour link, at gawin ang condition report sa ibaba.",
+    "title": "Mga larawan at remote evaluation",
+    "tourNone": "Walang naka-save na virtual tour link. Magdagdag ng isa kapag ini-edit ang lead.",
+    "tourOpen": "Buksan ang virtual tour ↗",
+    "tourTitle": "Link ng virtual tour",
+    "upload": "Mag-upload ng mga larawan",
+    "uploadErrorCount": "Maaari kang mag-upload ng hanggang {max} larawan bawat property.",
+    "uploadErrorGeneric": "Nabigo ang pag-upload. Pakisubukang muli.",
+    "uploadErrorSize": "Bawat larawan ay dapat mas mababa sa {max} MB.",
+    "uploadErrorType": "Mga image file lang ang maaaring i-upload.",
+    "uploading": "Nag-a-upload…",
+    "viewLarger": "Tingnan nang mas malaki"
+  },
+  "research": {
+    "add": "Idagdag",
+    "addStepPlaceholder": "Magdagdag ng custom na research step…",
+    "deleteStepConfirm": "Buburahin ang hakbang na ito?",
+    "linkHints": {
+      "customAssessor": "Ang opisyal na site ng county mo. Maghanap ayon sa address o parcel/APN para sa pangalan ng may-ari at mailing address.",
+      "customViolation": "Ang opisyal na permits/violations lookup ng lungsod o county mo. Maghanap ayon sa address o parcel/APN.",
+      "hnlbuild": "Records page ng DPP: maghanap muna sa HNL Build ayon sa address/TMK. Ang buong detalye ng violation ay limitado sa applicant — humingi ng ibang mga record sa pamamagitan ng Data Access and Imaging Branch (dppdaib@honolulu.gov).",
+      "qpublic": "Alternatibong opisyal na assessment portal na may mga GIS map. Maghanap ayon sa address o 16-digit na TMK.",
+      "rpad": "Opisyal na site ng City & County. Maghanap ayon sa address o TMK para sa pangalan ng may-ari, assessed value at sales history."
+    },
+    "notesPlaceholder": "Mga natuklasan + petsa…",
+    "openLookup": "Buksan ang opisyal na lookup ↗",
+    "ownerHint": "Eksaktong tulad ng ipinapakita sa mga county tax record — hindi hula.",
+    "ownerLabel": "Nakumpirmang pangalan ng may-ari",
+    "ownerPlaceholder": "Pangalan ng may-ari mula sa RPAD / qPublic",
+    "regions": {
+      "custom": {
+        "description": "Ituro ang research checklist sa mga site ng tax assessor at code-enforcement ng sarili mong county.",
+        "name": "Custom"
+      },
+      "hawaii": {
+        "description": "Mga opisyal na lookup ng Honolulu: RPAD at qPublic para sa pagmamay-ari, HNL Build ng DPP para sa mga permit at violation.",
+        "name": "Hawaiʻi (default)"
+      }
+    },
+    "removeStep": "Alisin ang hakbang",
+    "save": "I-save",
+    "stepDone": "Tapos",
+    "stepInProgress": "Ginagawa",
+    "stepTodo": "Dapat gawin",
+    "steps": {
+      "checkViolations": "Tingnan ang {source} para sa mga permit at violation",
+      "confirmViolation": "Kumpirmahin ang pinaghihinalaang violation nang may ebidensya",
+      "confirmViolationHint": "Mga drive-by o remote na larawan, mga petsang nakita, at kung aling partikular na code section ang pinaniniwalaan mong naaangkop. Panatilihing magkahiwalay ang pinaghihinalaan at nakumpirmang mga natuklasan.",
+      "crossCheck": "I-cross-check ang pagmamay-ari sa {source}",
+      "crossCheckHint": "Kumpirmahin na tugma ang parcel/APN sa property na dinaanan mo.",
+      "findOwner": "Hanapin ang may-ari sa pamamagitan ng {source}",
+      "findOwnerHint": "Itala ang pangalan ng may-ari at mailing address nang eksakto tulad ng ipinapakita.",
+      "makeContact": "Makipag-ugnayan (mailer, door knock, o tawag)",
+      "makeContactHint": "I-log ang petsa, paraan at kinalabasan ng bawat pakikipag-ugnayan.",
+      "skipTrace": "I-skip-trace ang phone at email ng may-ari",
+      "skipTraceHint": "Gamitin ang paborito mong skip-tracing service. I-log ang source at petsa — huwag huhulaan ang contact info."
+    },
+    "stepsDone": "{done} sa {total} hakbang na ang natapos"
+  },
+  "settings": {
+    "assessorSiteName": "County tax assessor — pangalan ng site",
+    "assessorSitePlaceholder": "hal. Maricopa County Assessor",
+    "assessorUrl": "County tax assessor — lookup URL *",
+    "assessorUrlHint": "Ang opisyal na page kung saan naghahanap ayon sa address o parcel/APN para sa mga record ng may-ari.",
+    "customNote": "Gamitin ang mga opisyal na public-record page ng county o lungsod mo — hindi mga paid data site. Kahit sino ay maaaring mag-subscribe mula kahit saan sa mundo; sinasabi lang ng mga link na ito sa checklist kung saan ka ipadadala.",
+    "hawaiiLookups": "Mga preset na lookup ng Hawaiʻi",
+    "needAssessorUrl": "Ilagay ang URL ng tax assessor ng county mo, o bumalik sa Hawaiʻi preset.",
+    "regionLabel": "Region ng pananaliksik",
+    "save": "I-save ang mga setting",
+    "savedOk": "Na-save ang mga setting ng region. Gagamitin ng mga bagong lead ang mga research link na ito.",
+    "saving": "Nagse-save…",
+    "sub": "Kung saan naghahanap ang research checklist ng mga may-ari at violation para sa mga bagong idinagdag na lead. Panatilihin ng mga kasalukuyang lead ang kasalukuyan nilang mga checklist link.",
+    "title": "Mga setting ng region",
+    "urlPlaceholder": "https://…",
+    "violationSiteName": "Code enforcement / mga violation — pangalan ng site",
+    "violationSitePlaceholder": "hal. City code compliance portal",
+    "violationUrl": "Code enforcement / mga violation — lookup URL",
+    "violationUrlHint": "Ang opisyal na page kung saan naghahanap ng mga permit at violation ayon sa address o parcel/APN."
+  },
+  "status": {
+    "assigned": "Assigned",
+    "contacted": "Nakontak",
+    "dead": "Patay",
+    "new": "Bagong lead",
+    "offer_made": "May offer na",
+    "priorityHigh": "Mataas",
+    "priorityLow": "Mababa",
+    "priorityMedium": "Katamtaman",
+    "researching": "Nagsasaliksik",
+    "under_contract": "Naka-kontrata"
+  },
+  "support": {
+    "responsePromise": "Layunin naming sumagot sa loob ng 2 business day."
+  },
+  "supportForm": {
+    "email": "Email",
+    "emailPlaceholder": "ikaw@example.com",
+    "errorEmail": "Pakilagay ang valid na email address.",
+    "errorMessageLong": "Pakibawasan ang mensahe mo sa 5,000 character.",
+    "errorMessageShort": "Pakilarawan nang mas detalyado ang isyu (10+ character).",
+    "errorName": "Pakilagay ang pangalan mo.",
+    "errorSend": "May nagkamali sa pagpapadala ng mensahe mo.",
+    "errorTopic": "Pumili ng paksa.",
+    "message": "Paano ka namin matutulungan?",
+    "messagePlaceholder": "Ilarawan kung ano ang nangyari, kung ano ang inaasahan mo, at anumang error message na nakita mo…",
+    "name": "Pangalan",
+    "namePlaceholder": "Jane Doe",
+    "note": "Huwag isama ang mga password o buong card number — hindi namin ito kailanman hihingin.",
+    "send": "Ipadala ang mensahe",
+    "sending": "Nagpapadala…",
+    "sentBody": "{promise} Kung urgent, isama ang “urgent” sa follow-up at bibigyan namin ito ng priority.",
+    "sentTitle": "Naipadala ang mensahe — salamat.",
+    "topic": "Paksa",
+    "topics": {
+      "account": "Account at sign-in",
+      "billing": "Billing at subscription",
+      "bug": "Bug report",
+      "contracts": "Mga Kontrata",
+      "getting-started": "Pagsisimula",
+      "lead-log": "Lead log",
+      "map-logging": "Map at pag-log ng property",
+      "other": "Iba pa",
+      "research": "Research workflow",
+      "refund": "Kahilingan ng refund",
+      "success-story": "Ibahagi ang iyong success story"
+    }
+  },
+  "contractPrint": {
+    "reviewGeneric": "Suriin nang mabuti — dapat aprubahan ng lisensyadong real-estate attorney sa estado ng property ang draft na ito bago may pumirma.",
+    "reviewHawaii": "Suriin nang mabuti — dapat aprubahan ng Hawaiʻi attorney mo ang draft na ito bago may pumirma.",
+    "print": "I-print",
+    "reviewRequestedNote": "Humiling ng attorney review noong {date}."
+  },
+  "authEmail": {
+    "subject": "Mag-sign in sa {product}",
+    "greeting": "Kamusta,",
+    "body": "I-click ang link sa ibaba para mag-sign in sa {product}. Mag-e-expire ang link sa loob ng 24 oras at gumagana ito sa anumang device.",
+    "cta": "Mag-sign in sa {product}",
+    "fallback": "O i-paste ang link na ito sa iyong browser:",
+    "footer": "Kung hindi ikaw ang humiling ng email na ito, puwede mo itong balewalain."
+  },
+  "sampleContract": {
+    "bannerTitle": "SAMPLE NA KONTRATA",
+    "bannerBody": "Ito ay demonstrasyon ng wholesale assignment template ng Violation Scout, na may gawa-gawang datos. Hindi ito legal na dokumento at hindi legal na payo — bawat tunay na kontrata ay dapat suriin ng lisensyadong abogado bago may pumirma.",
+    "bannerCta": "Simulan ang iyong libreng trial",
+    "watermark": "Sample",
+    "footerNote": "Sample para sa ilustrasyon lamang. Ang mga tunay na draft ay ginagawa mula sa sarili mong datos sa loob ng app."
+  },
+  "guides": {
+    "title": "Mga gabay sa wholesaling",
+    "sub": "Mga praktikal na paliwanag na nakatuon sa Hawaiʻi tungkol sa assignment contracts, compliance, violation notices, at pakikipag-usap sa mga seller.",
+    "bannerTitle": "Pang-edukasyon lamang — hindi legal na payo",
+    "bannerBody": "Ipinapaliwanag ng mga gabay na ito ang pangkalahatang konsepto ng wholesaling. Hindi ito legal na payo at hindi ito lumilikha ng relasyon ng abogado at kliyente. Ipasuri sa lisensyadong abogado ng Hawaiʻi ang iyong mga kontrata at deal bago may pumirma.",
+    "backToGuides": "← Lahat ng gabay",
+    "readMore": "Basahin ang gabay",
+    "articles": [
+      {
+        "slug": "how-assignment-contracts-work",
+        "title": "Paano gumagana ang assignment contracts sa Hawaiʻi",
+        "blurb": "Ang mekanika ng wholesaling: paglalagay ng property sa ilalim ng kontrata at pagbebenta ng iyong interes sa kontratang iyon sa cash buyer.",
+        "intro": "Sa wholesale deal, hindi ikaw mismo ang bumibili ng property. Sa halip, inilalagay mo ang property sa ilalim ng purchase contract na nagbibigay sa iyo ng karapatang mag-assign — saka mo ibebenta ang iyong posisyon sa kontratang iyon sa end buyer kapalit ng assignment fee. Ganito nagkakaugnay ang mga bahagi sa Hawaiʻi.",
+        "sections": [
+          {
+            "h": "Maghanap ng motivated seller",
+            "p": "Naghahanap ang mga wholesaler ng distressed properties: mga bakanteng bahay, napabayaang lote, mga nakikitang paglabag sa code. Ang motibasyon ng seller — hindi lang ang discount — ang nagpapagana ng deal."
+          },
+          {
+            "h": "Ilagay ito sa ilalim ng kontrata — may karapatang mag-assign",
+            "p": "Pumirma ka ng purchase agreement sa seller sa presyong may puwang para sa fee mo at sa kita ng end buyer. Dapat tahasang payagan ng kontrata ang assignment, at dapat nitong isiwalat na balak mong i-assign ito nang may kita."
+          },
+          {
+            "h": "Isiwalat ang lahat sa seller",
+            "p": "Sabihin nang malinaw sa seller: ikaw ay investor, balak mong i-assign ang kontrata sa ibang buyer, at kikita ka ng assignment fee. Ang mga sorpresa sa closing table ay pumapatay ng deals at nag-aanyaya ng legal na gulo."
+          },
+          {
+            "h": "Hanapin ang iyong end buyer",
+            "p": "I-market ang iyong contractual interest — hindi ang property mismo — sa iyong listahan ng mga buyer. Binibili ng mga cash investor ang posisyon ng kontrata mula sa iyo; ang assignment fee ang iyong kita."
+          },
+          {
+            "h": "Mag-close sa pamamagitan ng escrow",
+            "p": "Sa closing, popondohan ng end buyer ang pagbili, babayaran ang seller ng contract price, at matatanggap mo ang iyong assignment fee mula sa settlement. Hindi mo kailanman hinawakan ang titulo."
+          }
+        ]
+      },
+      {
+        "slug": "wholesaling-without-a-license",
+        "title": "Pananatiling compliant sa wholesaling nang walang lisensya sa Hawaiʻi",
+        "blurb": "Ang mga linyang mahalaga: kung ano ang maaaring gawin ng mga walang lisensyang wholesaler, kung ano ang lumalampas sa brokerage, at kung paano manatili sa tamang panig.",
+        "intro": "Sa Hawaiʻi, tulad sa karamihan ng mga estado, maaari kang mag-wholesale ng real estate nang walang lisensya — pero kung mananatili ka sa loob ng malinaw na mga hangganan. Ang pangunahing tuntunin: i-market ang sarili mong contractual interest, hindi ang property ng iba.",
+        "sections": [
+          {
+            "h": "I-market ang kontrata, hindi ang property",
+            "p": "Kapag mayroon ka nang assignable contract, mayroon kang equitable interest sa deal. Ang pag-advertise ng interes na iyon ang iyong negosyo. Ang pag-advertise ng property na wala kang kontrata — na parang ikaw ang listing agent nito — ay hindi."
+          },
+          {
+            "h": "Isiwalat ang iyong papel nang nakasulat",
+            "p": "Dapat sabihin ng iyong purchase agreement na ikaw ay investor na maaaring mag-assign ng kontrata nang may kita, na isiniwalat ang fee. Ang mga verbal na pagsisiwalat ay nakakalimutan; ang mga nakasulat ay nagpoprotekta sa iyo."
+          },
+          {
+            "h": "Huwag gawin ang trabaho ng broker",
+            "p": "Huwag makipag-negosasyon ng mga pagbili para sa ibang tao, huwag magpanggap na ahente, at huwag mangolekta ng komisyon. Ang iyong kabayaran ay assignment fee sa sarili mong kontrata — iyon ang buong modelo."
+          },
+          {
+            "h": "Earnest money at equitable interest",
+            "p": "Ang pinirmahang kontrata na may consideration (earnest money, kahit maliit na halaga) ang nagbibigay sa iyo ng tunay at maibebentang interes. Ang handshake at link ng listings ay hindi wholesale deal."
+          },
+          {
+            "h": "Kapag may duda, tumawag ng abogado",
+            "p": "Ang mga tuntunin ng Hawaiʻi ay may lokal na katangian. Bago ka lumawak, ipasuri sa abogado ng real estate ng Hawaiʻi ang iyong template ng kontrata at ang iyong marketing language. Maaari kang ikonekta ng Violation Scout sa isa mula sa anumang contract draft."
+          }
+        ]
+      },
+      {
+        "slug": "reading-a-honolulu-violation-notice",
+        "title": "Paano basahin ang violation notice ng Honolulu",
+        "blurb": "Kung ano talaga ang sinasabi ng Notice of Violation — at kung paano ito ginagawang motivated-seller lead ng mga investor.",
+        "intro": "Ang Department of Planning and Permitting (DPP) ng Honolulu ay naglalabas ng mga Notice of Violation (NOV) kapag lumalabag ang isang property sa mga code ng county. Para sa mga wholesaler, ang NOV ay parehong distress signal at due-diligence document. Ganito ito basahin.",
+        "sections": [
+          {
+            "h": "Ang header: sino, saan, ano",
+            "p": "Tinutukoy ng NOV ang property (address at Tax Map Key), ang owner of record, at ang petsa ng inspeksyon. Kumpirmahing tumutugma ang TMK sa property na iyong nireresearch — ang mga address lang ay maaaring manlinlang."
+          },
+          {
+            "h": "Ang paglalarawan ng paglabag at seksyon ng code",
+            "p": "Binabanggit ng notice ang tiyak na seksyon ng code na nilabag (building, zoning, housing, o grading codes) at inilalarawan ang natuklasang kondisyon. Hanapin ang binanggit na seksyon upang maunawaan kung ano mismo ang hindi compliant."
+          },
+          {
+            "h": "Corrective action at deadline",
+            "p": "Iniuutos ng NOV ang tiyak na corrective action sa isang deadline, kadalasan 30 araw. Ang mga hindi natupad na deadline ay nauuwi sa mga multa — minsan bawat araw — kaya nagiging motivated sellers ang mga owner."
+          },
+          {
+            "h": "Mga multa at lien",
+            "p": "Ang mga hindi nabayarang multa ay maaaring maging lien laban sa property. Bago ka magkontrata, i-verify ang kasalukuyang balanse ng multa at status ng lien — binabawas ang mga ito sa matatanggap ng seller at nakakaapekto sa iyong mga numero."
+          },
+          {
+            "h": "I-verify, huwag mag-assume",
+            "p": "Ang mga notice ay nareresolba, naaapela, o napapalitan. Suriin ang kasalukuyang status nang direkta sa DPP (ang kanilang Data Access and Imaging Branch ang humahawak ng mga record request) sa halip na kumilos batay sa lumang kopya."
+          }
+        ]
+      },
+      {
+        "slug": "talking-to-sellers-about-violations",
+        "title": "Pakikipag-usap sa mga seller tungkol sa mga paglabag sa code",
+        "blurb": "Ang mga paglabag ay nagbibigay sa iyo ng leverage — pero kung ang pag-uusap ay nananatiling magalang, tapat, at nakatuon sa solusyon.",
+        "intro": "Ang pagkatok sa pinto dahil na-flag ng county ang property ay maselan. Ang seller ay maaaring nahihiya, nalulunod, o galit. Ang trabaho mo ay maging ang taong may paraan palabas, hindi isa pang pinagmumulan ng pressure.",
+        "sections": [
+          {
+            "h": "Magsimula sa empatiya, hindi sa paglabag",
+            "p": "Simulan sa sitwasyon ng homeowner, hindi sa papeles ng county. Mas epektibo ang “Bumibili ako ng mga bahay sa neighborhood na ito — nag-iisip ka ba ng pagbebenta?” kaysa “Nakita ko ang violation notice mo.”"
+          },
+          {
+            "h": "Huwag magpanggap na gobyerno",
+            "p": "Huwag magpahiwatig na ikaw ay mula sa county, huwag magbanta ng enforcement, at huwag magmungkahi na lalala ang mga multa dahil sa iyo. Iyan ay coercion, at sinisira nito ang mga deal."
+          },
+          {
+            "h": "Banggitin ang problema para lang lutasin ito",
+            "p": "Kapag lumitaw ang paglabag, i-frame ito bilang isang bagay na karaniwan mong hinahawakan: “Bumibili ako nang as-is, kasama ang mga paglabag, at ako na ang bahala sa county side.” Ang ginhawa ang iyong pinakamahusay na closing tool."
+          },
+          {
+            "h": "Isama ang halaga ng solusyon sa iyong alok",
+            "p": "Magkaroon ng makatotohanang ideya kung magkano ang halaga ng compliance — mga repair, permit, multa — at isama ito sa iyong alok. Nirerespeto ng mga seller ang buyer na may makatwirang numero."
+          },
+          {
+            "h": "Ilagay ito sa sulat, panatilihing malinis",
+            "p": "Ang bawat pangako ay napupunta sa kontrata: mga as-is terms, timeline, ang iyong assignment disclosure. Pagkatapos ay hayaang suriin ito ng iyong abogado bago may pumirma."
+          }
+        ]
+      }
+    ],
+    "ctaTrial": "Simulan ang iyong libreng trial"
+  }
+}

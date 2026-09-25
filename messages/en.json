@@ -1,0 +1,977 @@
+{
+  "auth": {
+    "ctaLogin": "Email me a sign-in link",
+    "ctaSignup": "Email me my trial link",
+    "emailLabel": "Email address",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "errorSend": "Something went wrong sending the link. Please try again.",
+    "legal": "No passwords to remember or reset. By continuing you agree to the Terms of Service and Privacy Policy.",
+    "loginSub": "Enter the email you signed up with and we'll email you a sign-in link.",
+    "loginTitle": "Welcome back",
+    "sending": "Sending…",
+    "sent": "Link sent to {email}. Open it on any device to {finish}.",
+    "sentFinishLogin": "sign in",
+    "sentFinishSignup": "finish creating your account",
+    "signupSub": "Enter your email to create your account. Your {trial} starts on the next step — no credit card required.",
+    "signupTitle": "Start your free trial",
+    "verified": "Check your email — your sign-in link is on its way. It expires in 24 hours."
+  },
+  "billing": {
+    "accessDisabled": "Access disabled",
+    "accessEnabled": "Access enabled",
+    "manageCancel": "Manage payment method / cancel",
+    "needsSubscription": "You need an active subscription (or trial) to use the dashboard. Start your free trial below — no credit card required.",
+    "nextBilling": "Next billing date: {date} ({price}).",
+    "opening": "Opening…",
+    "redirecting": "Redirecting to Stripe…",
+    "status": "Status",
+    "statusActive": "Active",
+    "statusCanceled": "Canceled",
+    "statusNone": "No subscription",
+    "statusPastDue": "Past due",
+    "statusTrialing": "Free trial",
+    "statusUnpaid": "Unpaid",
+    "stripeNote": "Billing is handled securely by Stripe. We never see your card number. Cancel anytime from this page.",
+    "title": "Billing",
+    "trialEnds": "Your free trial ends {date}. Nothing is charged unless you add a payment method — if you do nothing, access simply ends.",
+    "startTrial": "Start free — no credit card required",
+    "addPaymentBefore": "Add a payment method before {date} to keep your access.",
+    "addPayment": "Add a payment method",
+    "trialCardNote": "Add a card before your trial ends and billing of {price} starts only after the trial. Cancel anytime and pay nothing.",
+    "refundCta": "Request a refund"
+  },
+  "contractBuilder": {
+    "additionalTerms": "Additional terms",
+    "additionalTermsPlaceholder": "Anything else agreed with the seller…",
+    "assignmentFee": "Assignment fee — disclosed to seller (USD)",
+    "assignmentFeePlaceholder": "e.g. 10000",
+    "cancel": "Cancel",
+    "closingDate": "Closing date",
+    "createDraft": "Create draft",
+    "draftNotice": "Draft only — not legal advice.",
+    "earnestMoney": "Earnest money (USD)",
+    "genericNotice": "This generates a state-neutral starting template. Have a licensed real-estate attorney in the property's state review it for that state's wholesaling requirements before anyone signs.",
+    "hawaiiNotice": "This generates a starting template with Hawaiʻi-appropriate wholesaling disclosures. A licensed Hawaiʻi attorney must review it before anyone signs.",
+    "inspectionDays": "Inspection period (days)",
+    "linkLead": "Link to lead (optional)",
+    "noLink": "— no link —",
+    "propertyAddress": "Property address *",
+    "purchasePrice": "Purchase price (USD) *",
+    "saveChanges": "Save changes",
+    "saving": "Saving…",
+    "sellerName": "Seller's full legal name *",
+    "templateGenericDesc": "State-neutral language. Have a local attorney review it for your state's rules.",
+    "templateGenericName": "Generic (other states)",
+    "templateHawaiiDesc": "Hawaiʻi-appropriate wholesaling and assignment disclosure language.",
+    "templateHawaiiName": "Hawaiʻi",
+    "templateLabel": "Contract template",
+    "tmk": "TMK"
+  },
+  "dashboard": {
+    "contracts": {
+      "delete": "Delete",
+      "deleteConfirm": "Delete this contract draft?",
+      "edit": "Edit",
+      "empty": "No contract drafts yet. Research a lead, then generate its assignment contract here.",
+      "emptyGuide": "How contracts work",
+      "fee": "Fee",
+      "modalEdit": "Edit contract draft",
+      "modalNew": "New contract draft",
+      "new": "+ New contract draft",
+      "previewPrint": "Preview & print",
+      "seller": "Seller",
+      "templateGeneric": "Generic",
+      "templateHawaii": "Hawaiʻi",
+      "attorneyNoteStrong": "Attorney review, one click away.",
+      "attorneyNote": "Violation Scout connects you with a Hawaiʻi real estate attorney for contract review — request it on any draft below. Drafts are drafts until reviewed.",
+      "requestReview": "Request attorney review",
+      "reviewRequested": "Review requested",
+      "reviewModalTitle": "Request attorney review",
+      "reviewModalBody": "This sends your draft to {attorney} and introduces you as a potential client. The attorney will contact you directly about reviewing it.",
+      "reviewModalNote": "No attorney-client relationship exists until the attorney accepts your request. The attorney bills you directly — review fees are not included in your subscription.",
+      "reviewConfirm": "Send request",
+      "reviewCancel": "Cancel",
+      "reviewResend": "re-send",
+      "reviewResendTitle": "Send the request again?",
+      "reviewResendBody": "Review was already requested on {date}. Re-sending emails the current version of this draft to the attorney.",
+      "reviewResendConfirm": "Send again",
+      "reviewSending": "Sending…",
+      "reviewErrorFallback": "Couldn't send the request. Please try again."
+    },
+    "leads": {
+      "add": "+ Add property"
+    },
+    "map": {
+      "empty": "No pins yet — tap the map to log your first property.",
+      "emptyGuide": "How map logging works",
+      "hint": "Click anywhere on the map to drop a pin and log the property. Click a pin to open its research checklist.",
+      "loading": "Loading map…"
+    },
+    "propertyModal": {
+      "add": "Add property",
+      "edit": "Edit lead",
+      "log": "Log this property"
+    },
+    "research": {
+      "empty": "Add a lead first —",
+      "emptyGuide": "how research works",
+      "selectGuide": "Research guide",
+      "selectLead": "Select a lead",
+      "selectPrompt": "Select a lead to work its research checklist.",
+      "stepsDone": "{done}/{total} steps done"
+    },
+    "saveFailed": "Save failed",
+    "tabs": {
+      "contracts": "Contracts ({count})",
+      "leads": "Leads ({count})",
+      "map": "Map",
+      "research": "Research"
+    }
+  },
+  "footer": {
+    "disclaimer": "This tool provides general information and document templates for educational purposes. It is not legal advice, not a law firm, and not a real estate brokerage. Wholesaling rules vary by state — have a licensed Hawaiʻi attorney review any contract before anyone signs it.",
+    "helpCenter": "Help Center",
+    "rights": "© {year} {productName}. All rights reserved.",
+    "guides": "Guides"
+  },
+  "help": {
+    "causes": "Likely causes",
+    "clear": "Clear",
+    "contactSub": "{promise} For billing questions, the email on your account helps us find you faster.",
+    "contactSupport": "Contact support",
+    "contactTitle": "Contact support",
+    "contactWhen": "When to contact support",
+    "fixGuide": "Fix guide",
+    "kicker": "Help Center",
+    "noResults": "No matches. Try different words — e.g. “trial”, “print”, or “sign in”.",
+    "results": "{count, plural, one {# result} other {# results}} for “{query}”",
+    "searchAria": "Search the help center",
+    "searchPlaceholder": "Search the help center — e.g. “cancel subscription”, “magic link”, “print contract”…",
+    "stepsTitle": "Fix it — in order",
+    "stillStuck": "Still stuck?",
+    "sub": "Search the guides below, or browse by topic. Most problems are solved by the troubleshooting section — if not, the contact form at the bottom reaches a human.",
+    "symptoms": "Symptoms",
+    "title": "How can we help?",
+    "topics": [
+      {
+        "blurb": "What Violation Scout is and how to begin.",
+        "id": "getting-started",
+        "items": [
+          {
+            "a": "Violation Scout is a driving-for-dollars lead tool for real-estate wholesalers: pin distressed properties on a map, log suspected code violations, research owners through official public records, and generate wholesale assignment contract drafts — all in one place. It's Hawaiʻi-first (the research workflow and contract template default to Honolulu records and Hawaiʻi disclosures), but anyone in the world can subscribe and use it.",
+            "q": "What is Violation Scout?"
+          },
+          {
+            "a": "Sign up with your email address and click the magic sign-in link we email you. Then, on the Billing page, click “Start free” — your 14-day trial begins immediately, no credit card required. About 3 days before the trial ends we’ll email you a reminder; add a payment method through the Billing page before the trial expires to keep your access. If you do nothing, your access ends automatically and you are never charged.",
+            "q": "How do I start my free trial?"
+          },
+          {
+            "a": "No. Violation Scout runs in any modern web browser and is designed to be phone-friendly, so you can log properties from the field on your phone without installing anything.",
+            "q": "Do I need to install an app?"
+          },
+          {
+            "a": "Yes. The map, lead logging, and contracts work anywhere in the world — the map starts on Oʻahu but you can pan and zoom to any market. The research checklist defaults to City & County of Honolulu public records, but in Dashboard → Settings you can switch to a Custom region and point the checklist at your own county's tax assessor and code-enforcement sites. The contract generator also offers a Generic template with state-neutral language for use outside Hawaiʻi.",
+            "q": "Does it work outside Hawaiʻi?"
+          },
+          {
+            "a": "No. Violation Scout provides general information and document templates for educational purposes. Wholesaling rules vary by state. In Hawaiʻi, market your contractual/equitable interest (not a property you don't own), use assignable contracts with clear disclosure, and have a licensed Hawaiʻi attorney review any contract before anyone signs it.",
+            "q": "Is using this app the same as getting legal advice?"
+          },
+          {
+            "a": "The interface is available in English, Spanish (Español), and Tagalog. Switch languages any time from the menu in the top navigation — your choice is remembered. Generated contract documents stay in English, since that is the language they would be reviewed and enforced in.",
+            "q": "What languages does the app support?"
+          }
+        ],
+        "title": "Getting started"
+      },
+      {
+        "blurb": "Dropping pins and capturing leads in the field.",
+        "id": "map-logging",
+        "items": [
+          {
+            "a": "Open the Map tab and click (or tap) anywhere on the map to drop a pin. A form opens — enter the address, your distress notes, any suspected violations, and a priority, then save. The pin appears on the map and the lead is added to your log.",
+            "q": "How do I log a property from the map?"
+          },
+          {
+            "a": "No. The map uses free OpenStreetMap tiles through Leaflet, so there is nothing to configure and no key to pay for.",
+            "q": "Do I need a Google Maps API key?"
+          },
+          {
+            "a": "Pin colors follow the lead status: New (amber), Researching (blue), Contacted (purple), Offer made (orange), Under contract (green), Assigned (dark green), Dead (gray). Change a lead's status in the Lead log and its pin color updates automatically.",
+            "q": "What do the pin colors mean?"
+          },
+          {
+            "a": "Yes — the map and logging form are built for phones. For safety, have a passenger log properties or pull over before tapping the map.",
+            "q": "Can I use the map on my phone while driving for dollars?"
+          },
+          {
+            "a": "See the troubleshooting guide “Map tiles not loading” below — it walks through the usual causes (connection, ad blockers, cached tiles) step by step.",
+            "q": "The map is blank or the tiles won't load. What do I do?"
+          }
+        ],
+        "title": "Map & logging properties"
+      },
+      {
+        "blurb": "Managing, sorting, and exporting your leads.",
+        "id": "lead-log",
+        "items": [
+          {
+            "a": "New lead (just logged) → Researching (working the checklist) → Contacted (owner reached) → Offer made → Under contract → Assigned (contract wholesaled to a buyer). Mark a lead Dead when it's no longer worth pursuing. Statuses drive pin colors on the map.",
+            "q": "What do the lead statuses mean?"
+          },
+          {
+            "a": "Priorities (low / medium / high) are yours to define — for example, high for visibly vacant or heavily distressed properties you want to research first. They don't change app behavior; they help you sort your attention.",
+            "q": "How should I use priorities?"
+          },
+          {
+            "a": "Yes. On the Leads tab, click “Export CSV” to download all your leads as a CSV file, which opens in Excel or Google Sheets.",
+            "q": "Can I export my leads to a spreadsheet?"
+          },
+          {
+            "a": "Yes — use the Edit and Delete actions in the lead log. Deleting is permanent and can't be undone, so the app asks for confirmation first.",
+            "q": "Can I edit or delete a lead?"
+          },
+          {
+            "a": "See the troubleshooting guide “Logged data not appearing” below.",
+            "q": "I saved a lead but it isn't showing up."
+          }
+        ],
+        "title": "Lead log"
+      },
+      {
+        "blurb": "Finding owners and checking violations through official records.",
+        "id": "research",
+        "items": [
+          {
+            "a": "Open the Research tab, select the lead, and work the checklist. The first steps link to the official lookups for your configured region — Honolulu's Real Property Assessment Division (RPAD) by default. Search by address or TMK and record the owner name and mailing address exactly as shown, then cross-check on the second source.",
+            "q": "How do I find who owns a property?"
+          },
+          {
+            "a": "Yes. Go to Dashboard → Settings and switch your region to Custom, then enter your own county tax assessor's lookup URL and code-enforcement/violations URL. Checklists for leads you add from then on will deep-link your county's sites instead of Honolulu's. Existing leads keep their original links.",
+            "q": "Can I use the research checklist outside Hawaiʻi?"
+          },
+          {
+            "a": "Honolulu offers no public API for ownership or violation data, so no app can pull it with one click. The checklist deep-links you to the official lookup pages instead, and tracks what you've confirmed.",
+            "q": "Why can't the app look up owners automatically?"
+          },
+          {
+            "a": "Suspected is your field observation (e.g. “junk vehicles in yard, possible violation”). Confirmed means you've seen it in an official record, such as a notice of violation or permit status in HNL Build. Keep the two separate — the research checklist has a dedicated step for confirming with evidence.",
+            "q": "What's the difference between suspected and confirmed violations?"
+          },
+          {
+            "a": "The City restricts detailed violation records to the applicant. The app's checklist links to the DPP records page, where you can search HNL Build by address or TMK first; for records beyond the listing, submit a request to the Data Access and Imaging Branch (dppdaib@honolulu.gov).",
+            "q": "HNL Build won't show me full violation details. Why?"
+          },
+          {
+            "a": "The checklist includes a skip-tracing step, but you'll use your own skip-tracing service for phone and email lookup. Log the source and date of anything you find — never guess contact info.",
+            "q": "Should I skip-trace inside the app?"
+          }
+        ],
+        "title": "Research workflow"
+      },
+      {
+        "blurb": "Evaluating properties you can't visit in person.",
+        "id": "remote",
+        "items": [
+          {
+            "a": "Open the lead in the Research tab and use the Photos & remote evaluation section: upload photos a contact sends you, save a virtual tour link (a video walkthrough or video-call recording), and fill out the condition report — a structured exterior/interior checklist covering roof, walls, windows, doors, yard, structural issues, vacancy signs, and utilities. Each item is rated good, fair, or poor with room for notes.",
+            "q": "I can't visit a property in person. How can I still evaluate it?"
+          },
+          {
+            "a": "Image files (JPEG, PNG, WebP, and similar) up to 8 MB each, with up to 12 photos per property. Add a caption to each photo so you remember what it shows.",
+            "q": "What photo formats and sizes are supported?"
+          },
+          {
+            "a": "Only you — photos are private to your account, just like your leads. They are never shared with other subscribers.",
+            "q": "Who can see the photos I upload?"
+          }
+        ],
+        "title": "Remote evaluation"
+      },
+      {
+        "blurb": "Generating wholesale assignment contract drafts.",
+        "id": "contracts",
+        "items": [
+          {
+            "a": "A wholesale assignment contract draft pre-filled with the property, seller, price, earnest money, assignment fee, and closing details you enter. You pick a template when creating the draft: Hawaiʻi (with Hawaiʻi-appropriate disclosures such as your intent to assign the contract for a fee) or Generic, with state-neutral language for properties in other states. Every draft is watermarked DRAFT ONLY.",
+            "q": "What does the contract generator create?"
+          },
+          {
+            "a": "No — the app doesn't collect e-signatures. Generate the draft, print it (or save as PDF), and collect signatures on paper or with your own e-signature tool.",
+            "q": "Can the seller sign inside the app?"
+          },
+          {
+            "a": "On the Contracts tab, click “Preview & print” on the draft. In the print view, use your browser's print dialog (Ctrl/Cmd + P) and choose “Save as PDF” as the destination. If the layout looks off, see the troubleshooting guide “Contract not printing correctly.”",
+            "q": "How do I print or save a contract as PDF?"
+          },
+          {
+            "a": "No. It is a starting draft, not a substitute for an attorney-drafted agreement. Hawaiʻi-template drafts need review by a licensed Hawaiʻi real-estate attorney; Generic-template drafts need review by a licensed real-estate attorney in the state where the property is located, since wholesaling rules vary by state. Nobody should rely on or sign it before that review.",
+            "q": "Is the generated contract ready to use as-is?"
+          },
+          {
+            "q": "What is attorney review?",
+            "a": "On any contract draft, click “Request attorney review.” We email your draft details to our Hawaiʻi real-estate attorney partner and introduce you as a potential client. The attorney contacts you directly about reviewing it — the app never shares your data with anyone else."
+          },
+          {
+            "q": "What does attorney review cost?",
+            "a": "The attorney bills you separately and directly — review fees are not part of your Violation Scout subscription. Confirm the attorney's fee with them before they begin work."
+          },
+          {
+            "q": "Does requesting a review make the attorney my lawyer?",
+            "a": "No. Your request is an introduction only. An attorney-client relationship begins only when the attorney accepts your engagement under their own terms."
+          },
+          {
+            "q": "Can I request review again after changing the draft?",
+            "a": "Yes. Once requested, the button becomes a “Review requested” badge. If you revise the draft, use the re-send option to email the updated version to the attorney."
+          }
+        ],
+        "title": "Contracts"
+      },
+      {
+        "blurb": "Trial, pricing ($39/mo after a 14-day free trial), and cancellations.",
+        "id": "billing",
+        "items": [
+          {
+            "a": "After your 14-day free trial, the subscription is $39/mo, billed monthly through Stripe. There are no per-lead fees, credit packs, or add-ons.",
+            "q": "How much does Violation Scout cost?"
+          },
+          {
+            "a": "Go to the Billing page and click “Manage subscription” to open the Stripe Customer Portal, then cancel there. Your access continues until the end of the current billing period, and you won't be charged again.",
+            "q": "How do I cancel my subscription?"
+          },
+          {
+            "a": "About 3 days before your trial ends, we email you a reminder. If you’ve added a payment method through the Billing page, you’re charged $39/mo when the trial ends and your subscription becomes active. If you haven’t added one, your subscription is cancelled automatically — your access ends and you are never charged.",
+            "q": "What happens when my trial ends?"
+          },
+          {
+            "a": "Open the Billing page → “Manage subscription” and update your payment method in the Stripe Customer Portal. If a payment stays unresolved, your dashboard access is paused until billing is current — it restores automatically once payment succeeds.",
+            "q": "My payment failed. What should I do?"
+          },
+          {
+            "a": "Yes — every paid subscription includes a 30-day money-back guarantee, no questions asked. If you’re within 30 days of a payment, click “Request a refund” on the Billing page or use the support form below with the refund topic. Refunds are issued manually by the founder in Stripe, usually within 5 business days, back to your original payment method.",
+            "q": "Do you offer refunds?"
+          },
+          {
+            "a": "Your trial starts the moment you click “Start free” — try reloading the page. If it still shows as inactive after a few minutes, make sure you’re signed in with the same email you used to start the trial, then contact support.",
+            "q": "I started my trial but my dashboard still shows as inactive."
+          },
+          {
+            "q": "Will I get a reminder before my trial ends?",
+            "a": "Yes. About 3 days before your trial expires, we email you at your sign-in address with a link to add a payment method. The reminder is automatic — but adding your card is up to you."
+          }
+        ],
+        "title": "Billing & subscription"
+      },
+      {
+        "blurb": "Magic links, email changes, and your data.",
+        "id": "account",
+        "items": [
+          {
+            "a": "Violation Scout uses passwordless sign-in. Enter your email on the sign-in page and we'll email you a magic link — click it and you're signed in. No passwords to remember or reset.",
+            "q": "How do I sign in? I never set a password."
+          },
+          {
+            "a": "See the troubleshooting guide “Magic-link email not arriving” below.",
+            "q": "I didn't receive my magic link email."
+          },
+          {
+            "a": "Not self-service yet — contact support with your current and new email address and we'll move your account and leads over.",
+            "q": "Can I change the email address on my account?"
+          },
+          {
+            "a": "Contact support and ask for account deletion. We'll permanently delete your user record and all associated leads, research items, and contract drafts.",
+            "q": "How do I delete my account and data?"
+          },
+          {
+            "a": "Go to Dashboard → Settings. Choose Hawaiʻi (the default, using Honolulu's RPAD and HNL Build lookups) or Custom, where you enter your own county's tax assessor and code-enforcement lookup URLs. The change applies to research checklists for leads you add afterward; existing leads keep their original links.",
+            "q": "Where do I change my research region?"
+          },
+          {
+            "a": "Yes. All properties, research notes, and contract drafts are scoped to your account — other subscribers can't see them. See the Privacy Policy for details.",
+            "q": "Is my lead data private?"
+          },
+          {
+            "q": "Who owns the data I put into Violation Scout?",
+            "a": "You do. We never sell your data to anyone, for any reason. You can export your full lead log to CSV at any time from the dashboard, cancel in one click from the Billing page, and ask support to permanently delete your account data."
+          }
+        ],
+        "title": "Account & sign-in"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "causes": [
+          "No internet connection or a very slow connection (common in the field).",
+          "An ad blocker, privacy extension, or VPN blocking the tile server.",
+          "Stale cached tiles or a stuck map session."
+        ],
+        "contactWhen": "If tiles still won't load on two different networks with extensions disabled, contact support and tell us your device, browser, and whether the rest of the app works.",
+        "id": "map-tiles",
+        "steps": [
+          "Check your connection: load any other website. If you're in the field with weak signal, move somewhere with better reception and reload.",
+          "Hard-refresh the page (Ctrl/Cmd + Shift + R).",
+          "Temporarily disable ad blockers or privacy extensions for this site, then reload.",
+          "If you're on a VPN, disconnect it and try again — some VPN exits are rate-limited by tile providers.",
+          "Clear your browser cache for this site, or try a private/incognito window.",
+          "Try a different network (e.g. switch from Wi-Fi to mobile data) to rule out a network-level block."
+        ],
+        "symptoms": [
+          "The map area is gray, blank, or shows a “tiles unavailable” message.",
+          "Streets and satellite imagery never appear, even after waiting."
+        ],
+        "title": "Map tiles not loading"
+      },
+      {
+        "causes": [
+          "The email landed in spam/junk or a Promotions tab.",
+          "A typo in the email address you entered.",
+          "Corporate or school email filters quarantining automated mail.",
+          "Requesting several links in a row — only the newest link works, and rapid repeats can look like abuse to filters."
+        ],
+        "contactWhen": "If no link arrives after 15 minutes across two different email addresses, contact support with the email address you're trying to use (don't paste any link codes).",
+        "id": "magic-link",
+        "steps": [
+          "Wait 5 minutes — email delivery is occasionally slow.",
+          "Check spam/junk and any Promotions or Updates tabs, and search for the sender address.",
+          "Confirm you typed your email correctly, then request one fresh link and use the newest email only.",
+          "If you use a work or school address, try a personal address instead — corporate filters often block automated mail.",
+          "Add the sender address to your contacts and request another link."
+        ],
+        "symptoms": [
+          "You requested a sign-in link but no email arrives within a few minutes.",
+          "The sign-in page says the link was sent, but your inbox is empty."
+        ],
+        "title": "Magic-link email not arriving"
+      },
+      {
+        "causes": [
+          "Stripe's confirmation webhook hasn't reached the app yet (usually seconds, occasionally minutes).",
+          "The checkout was closed or canceled before payment completed.",
+          "You checked out with a different email than your account."
+        ],
+        "contactWhen": "If you started a trial in the last 14 days and the Billing page still shows no subscription after 15 minutes, contact support with the email you signed up with.",
+        "id": "subscription-status",
+        "steps": [
+          "Wait 2–3 minutes, then reload the Billing page.",
+          "Make sure you’re signed in with the same email you used to start the trial.",
+          "If the trial started more than 14 days ago without a payment method added, it has expired — start a new trial from the Billing page if you haven’t had one before."
+        ],
+        "symptoms": [
+          "You started your free trial but the Billing page still shows no active subscription.",
+          "You’re redirected back to the Billing page when opening the dashboard."
+        ],
+        "title": "Trial or subscription status not updating"
+      },
+      {
+        "causes": [
+          "Card declined by your bank (insufficient funds, fraud hold, international block).",
+          "Expired card or mistyped card details.",
+          "Browser extensions interfering with the Stripe popup."
+        ],
+        "contactWhen": "If two different valid cards fail and your bank says nothing is blocked, contact support with the exact error message Stripe shows.",
+        "id": "checkout-errors",
+        "steps": [
+          "Double-check the card number, expiry, and CVC, and confirm the billing ZIP matches your bank’s records.",
+          "Try a different card, or call the number on the back of your card — banks often just need you to approve the charge.",
+          "Disable ad blockers for the Stripe page and try again in a private/incognito window."
+        ],
+        "symptoms": [
+          "Adding or updating your card in the Stripe Customer Portal shows an error.",
+          "Your card is declined when the trial converts to a paid subscription."
+        ],
+        "title": "Payment method errors"
+      },
+      {
+        "causes": [
+          "The save actually failed (e.g. connection dropped) — the app shows an alert in that case.",
+          "You're signed in with a different email than the one you used to create the data.",
+          "A stale page is showing cached content."
+        ],
+        "contactWhen": "If the data still doesn't appear after reloading on a good connection, contact support with the address or contract name and roughly when you saved it.",
+        "id": "data-missing",
+        "steps": [
+          "Reload the page — the dashboard re-fetches your data on load.",
+          "Check whether an error alert appeared when you saved. If it said “Save failed,” your connection likely dropped; retry on a stable connection.",
+          "Confirm you're signed in with the same email you used originally (leads are private to each account).",
+          "For a missing map pin, check the Leads tab — the lead may have saved without coordinates."
+        ],
+        "symptoms": [
+          "You saved a property, research note, or contract but it doesn't show in the list.",
+          "The app showed an error or “Save failed” message."
+        ],
+        "title": "Logged data not appearing"
+      },
+      {
+        "causes": [
+          "Browser print scaling or margins clipping the document.",
+          "Background graphics disabled, hiding shaded sections.",
+          "Printing from the dashboard instead of the dedicated print view."
+        ],
+        "contactWhen": "If the print view itself looks broken on screen (not just on paper), contact support with your browser and a description of what's wrong — the draft is still safe in your Contracts tab.",
+        "id": "contract-print",
+        "steps": [
+          "Always print from the dedicated print view: Contracts tab → “Preview & print.” Don't print the dashboard page itself.",
+          "In the print dialog, set Destination to “Save as PDF” (or your printer), and set Margins to “Default.”",
+          "Enable “Background graphics” in the print dialog's options — the draft banner and shaded blocks need it.",
+          "If content is cut off, try a different scale (e.g. 90%) or switch between Portrait and Landscape.",
+          "Try a different browser (Chrome's print-to-PDF is the most reliable)."
+        ],
+        "symptoms": [
+          "The printed contract is cut off, missing pages, or the layout looks broken.",
+          "“Save as PDF” produces a blank or partial document."
+        ],
+        "title": "Contract not printing correctly"
+      }
+    ],
+    "troubleshootingSub": "Step-by-step fixes for the most common problems. Work the steps in order — most issues resolve by step 3 or 4.",
+    "troubleshootingTitle": "Troubleshooting"
+  },
+  "landing": {
+    "badge": "Built for Hawaiʻi wholesalers",
+    "ctaHow": "See how it works",
+    "ctaTrial": "Start your {trial}",
+    "faqTitle": "Questions, answered straight",
+    "faqs": [
+      {
+        "a": "Wholesalers market their contractual (equitable) interest in a property, not the property itself, and disclose the intent to assign for a fee. Rules are strict and fact-specific — talk to a Hawaiʻi real estate attorney before your first deal. This app includes the right disclosures but is not legal advice.",
+        "q": "Do I need a real estate license to wholesale in Hawaiʻi?"
+      },
+      {
+        "a": "No — and neither do the $99/month tools, honestly. Honolulu publishes no API for this. Instead you get one-tap links into the official county tax records and DPP lookup, plus a checklist that keeps confirmed findings separate from suspicions.",
+        "q": "Does the app automatically find owners and violations?"
+      },
+      {
+        "a": "The big platforms license nationwide data feeds and pass the cost to you. This tool is deliberately simpler: field logging, research workflow and contracts, focused on Hawaiʻi wholesalers who drive for dollars themselves.",
+        "q": "Why $39 when competitors charge $99+?"
+      },
+      {
+        "a": "Yes. Month-to-month, cancel from the billing page in one click. No annual lock-in, no cancellation fees, no retention maze.",
+        "q": "Can I cancel anytime?"
+      }
+    ],
+    "features": [
+      {
+        "body": "Driving the neighborhood? Drop a pin the moment you spot a distressed property. No API keys, no setup — the map just works, even on your phone.",
+        "title": "Pin it on the map"
+      },
+      {
+        "body": "Every pin becomes a lead row: address, distress notes, suspected violations, priority, follow-up dates and status — a spreadsheet that stays in sync with your map.",
+        "title": "Log it like a pro"
+      },
+      {
+        "body": "A guided checklist walks you through Honolulu's official public records — RPAD tax rolls for ownership, HNL Build for permits and violations — and tracks what's confirmed vs. still suspected.",
+        "title": "Research the owner & violations"
+      },
+      {
+        "body": "Turn a researched lead into a wholesale assignment contract draft in minutes, with Hawaiʻi-appropriate disclosures built in. Print it, review it with your attorney, get it signed.",
+        "title": "Generate the assignment contract"
+      }
+    ],
+    "hero": "Driving for dollars, from the driver's seat to the closing table.",
+    "howTitle": "Lead to contract in four steps",
+    "perMonth": "/month",
+    "planBullets": [
+      "{trial} — cancel before it ends and pay nothing",
+      "Unlimited properties, pins and lead rows",
+      "Map + lead log + research checklists",
+      "Wholesale assignment contract generator",
+      "Month-to-month, cancel anytime in one click"
+    ],
+    "pricingSub": "The national tools start at $99/month and meter everything. One plan, one price.",
+    "pricingTitle": "Simple, honest pricing",
+    "sub": "Spot a distressed property in Nanakuli, pin it on the map, log what you see, research the owner through official county records, and generate your wholesale assignment contract — one simple flow, {price} after a {trial}.",
+    "trialNote": "Start free — no credit card required. Cancel anytime.",
+    "attorneyLine": "Violation Scout connects you with a Hawaiʻi real estate attorney for contract review.",
+    "attorneySub": "One click sends any draft for professional review. Drafts are drafts until reviewed — an attorney-client relationship begins only when you engage the attorney.",
+    "guaranteeNote": "30-day money-back guarantee — no questions asked.",
+    "sampleCta": "See a sample contract",
+    "dataTitle": "Your data is yours",
+    "dataSub": "Your pipeline is your livelihood. We treat it that way.",
+    "dataBullets": [
+      "We never sell your data — to anyone, for any reason.",
+      "Export everything to CSV anytime, straight from the lead log.",
+      "Cancel in one click from the Billing page — no calls, no retention maze.",
+      "Want everything deleted? Contact support and we’ll wipe your account data."
+    ],
+    "testimonialsTitle": "Wholesaler success stories",
+    "testimonialsSub": "Real deals from real subscribers.",
+    "testimonialsEmptyTitle": "Be our first success story",
+    "testimonialsEmptyBody": "Closed a deal with Violation Scout? We’d love to feature your story — with your permission, of course.",
+    "testimonialsEmptyCta": "Share your success story"
+  },
+  "leadTable": {
+    "delete": "Delete",
+    "deleteConfirm": "Delete this lead?",
+    "edit": "Edit",
+    "empty": "No leads yet. Drop a pin on the Map tab or add your first property to start your log.",
+    "emptyGuide": "Lead log guide",
+    "exportCsv": "Export CSV",
+    "headers": {
+      "actions": "Actions",
+      "address": "Address",
+      "followUp": "Follow-up",
+      "owner": "Owner",
+      "priority": "Priority",
+      "status": "Status"
+    },
+    "noOwner": "—",
+    "research": "Research"
+  },
+  "meta": {
+    "billingTitle": "Billing — Violation Scout",
+    "dashboardTitle": "Dashboard — Violation Scout",
+    "helpDescription": "Answers, troubleshooting guides, and support for Violation Scout: map logging, lead management, research, contracts, and billing.",
+    "helpTitle": "Help Center — Violation Scout",
+    "landingDescription": "Pin distressed properties on a map, log code-violation leads, research owners through official Hawaiʻi public records, and generate wholesale assignment contracts — in one simple tool.",
+    "landingTitle": "Violation Scout — Driving for Dollars, Built for Hawaiʻi",
+    "loginTitle": "Sign in — Violation Scout",
+    "settingsTitle": "Region settings — Violation Scout",
+    "signupTitle": "Start your free trial — Violation Scout",
+    "sampleContractTitle": "Sample wholesale assignment contract | Violation Scout",
+    "sampleContractDescription": "See exactly what a Violation Scout wholesale assignment draft looks like — no signup required.",
+    "guidesTitle": "Wholesaling guides | Violation Scout",
+    "guidesDescription": "Free Hawaiʻi-focused guides: assignment contracts, wholesaling compliance, reading violation notices, and talking to sellers."
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "help": "Help",
+    "language": "Language",
+    "pricing": "Pricing",
+    "settings": "Settings",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "startTrial": "Start free trial"
+  },
+  "pricing": {
+    "price": "${price}/mo",
+    "trial": "{days}-day free trial"
+  },
+  "propertyForm": {
+    "addLead": "Add lead",
+    "address": "Property address *",
+    "addressPlaceholder": "87-1234 Farrington Hwy",
+    "cancel": "Cancel",
+    "city": "City",
+    "distressNotes": "What you saw (distress notes)",
+    "distressPlaceholder": "Overgrown yard, boarded windows, mail piled up…",
+    "followUp": "Follow up",
+    "pinnedAt": "Pinned at {lat}, {lng}",
+    "priority": "Priority",
+    "saveChanges": "Save changes",
+    "saving": "Saving…",
+    "status": "Status",
+    "suspectedViolations": "Suspected code violations",
+    "tmk": "TMK",
+    "tmkPlaceholder": "1-8-7-…",
+    "violationsPlaceholder": "e.g. unpermitted addition, junk vehicles — suspicions only until confirmed in research",
+    "virtualTour": "Virtual tour link",
+    "virtualTourHint": "A video call recording, YouTube/Vimeo link, or Matterport tour a contact shared with you.",
+    "virtualTourInvalid": "Enter a valid http(s) link, or leave it blank.",
+    "virtualTourPlaceholder": "https://… link to a video walkthrough",
+    "zip": "ZIP",
+    "zipPlaceholder": "96792"
+  },
+  "remote": {
+    "captionPlaceholder": "Caption…",
+    "close": "Close",
+    "conditionSave": "Save condition report",
+    "conditionSaveFailed": "Couldn't save the condition report. Please try again.",
+    "conditionSaved": "Condition report saved.",
+    "conditionSaving": "Saving…",
+    "conditionSub": "Fill this from photos, a video walkthrough, or a person on site. Ratings are your judgment call — note what you based them on.",
+    "conditionTitle": "Remote condition report",
+    "deletePhoto": "Delete photo",
+    "deletePhotoConfirm": "Delete this photo?",
+    "items": {
+      "doors": "Doors",
+      "roof": "Roof",
+      "structural": "Visible structural issues",
+      "utilities": "Utilities on / off",
+      "vacancy": "Signs of vacancy",
+      "walls": "Walls / siding",
+      "windows": "Windows",
+      "yard": "Yard / landscaping"
+    },
+    "maxPhotos": "Up to {max} photos per property.",
+    "noPhotos": "No photos yet. Upload images a contact, bird dog, or agent sends you.",
+    "notConfigured": "Photo uploads aren't enabled on this site yet — the owner needs to add a Vercel Blob token. The virtual tour link and condition report below still work.",
+    "notesPlaceholder": "Notes — what did you see, and how (photo, video call, on-site person)?",
+    "photosTitle": "Photos",
+    "status": {
+      "fair": "Fair",
+      "good": "Good",
+      "poor": "Poor",
+      "unchecked": "Not checked"
+    },
+    "sub": "Can't visit in person? Upload photos a contact sends you, save a virtual tour link, and work the condition report below.",
+    "title": "Photos & remote evaluation",
+    "tourNone": "No virtual tour link saved. Add one when editing the lead.",
+    "tourOpen": "Open virtual tour ↗",
+    "tourTitle": "Virtual tour link",
+    "upload": "Upload photos",
+    "uploadErrorCount": "You can upload up to {max} photos per property.",
+    "uploadErrorGeneric": "Upload failed. Please try again.",
+    "uploadErrorSize": "Each photo must be under {max} MB.",
+    "uploadErrorType": "Only image files can be uploaded.",
+    "uploading": "Uploading…",
+    "viewLarger": "View larger"
+  },
+  "research": {
+    "add": "Add",
+    "addStepPlaceholder": "Add a custom research step…",
+    "deleteStepConfirm": "Delete this step?",
+    "linkHints": {
+      "customAssessor": "Your county's official site. Search by address or parcel/APN for the owner name and mailing address.",
+      "customViolation": "Your city or county's official permits/violations lookup. Search by address or parcel/APN.",
+      "hnlbuild": "DPP's records page: search HNL Build first by address/TMK. Full violation details are restricted to the applicant — request other records via the Data Access and Imaging Branch (dppdaib@honolulu.gov).",
+      "qpublic": "Alternate official assessment portal with GIS maps. Search by address or 16-digit TMK.",
+      "rpad": "Official City & County site. Search by address or TMK for owner name, assessed value and sales history."
+    },
+    "notesPlaceholder": "Findings + date…",
+    "openLookup": "Open official lookup ↗",
+    "ownerHint": "Exactly as shown in the county tax records — never a guess.",
+    "ownerLabel": "Confirmed owner name",
+    "ownerPlaceholder": "Owner name from RPAD / qPublic",
+    "regions": {
+      "custom": {
+        "description": "Point the research checklist at your own county's tax assessor and code-enforcement sites.",
+        "name": "Custom"
+      },
+      "hawaii": {
+        "description": "Honolulu's official lookups: RPAD and qPublic for ownership, DPP's HNL Build for permits and violations.",
+        "name": "Hawaiʻi (default)"
+      }
+    },
+    "removeStep": "Remove step",
+    "save": "Save",
+    "stepDone": "Done",
+    "stepInProgress": "In progress",
+    "stepTodo": "To do",
+    "steps": {
+      "checkViolations": "Check {source} for permits and violations",
+      "confirmViolation": "Confirm the suspected violation with evidence",
+      "confirmViolationHint": "Drive-by or remote photos, dates observed, and which specific code section you believe applies. Keep suspected vs. confirmed findings separate.",
+      "crossCheck": "Cross-check ownership on {source}",
+      "crossCheckHint": "Confirm the parcel/APN matches the property you drove by.",
+      "findOwner": "Find the owner via {source}",
+      "findOwnerHint": "Record the owner name and mailing address exactly as shown.",
+      "makeContact": "Make contact (mailer, door knock, or call)",
+      "makeContactHint": "Log the date, method and outcome of every touch.",
+      "skipTrace": "Skip-trace the owner's phone and email",
+      "skipTraceHint": "Use your preferred skip-tracing service. Log the source and date — never guess contact info."
+    },
+    "stepsDone": "{done} of {total} steps done"
+  },
+  "settings": {
+    "assessorSiteName": "County tax assessor — site name",
+    "assessorSitePlaceholder": "e.g. Maricopa County Assessor",
+    "assessorUrl": "County tax assessor — lookup URL *",
+    "assessorUrlHint": "The official page where you search by address or parcel/APN for owner records.",
+    "customNote": "Use your county or city's official public-record pages — not paid data sites. Anyone can subscribe from anywhere in the world; these links just tell the checklist where to send you.",
+    "hawaiiLookups": "Hawaiʻi preset lookups",
+    "needAssessorUrl": "Enter your county tax assessor's URL, or switch back to the Hawaiʻi preset.",
+    "regionLabel": "Research region",
+    "save": "Save settings",
+    "savedOk": "Region settings saved. New leads will use these research links.",
+    "saving": "Saving…",
+    "sub": "Where the research checklist looks up owners and violations for newly added leads. Existing leads keep their current checklist links.",
+    "title": "Region settings",
+    "urlPlaceholder": "https://…",
+    "violationSiteName": "Code enforcement / violations — site name",
+    "violationSitePlaceholder": "e.g. City code compliance portal",
+    "violationUrl": "Code enforcement / violations — lookup URL",
+    "violationUrlHint": "The official page where you search permits and violations by address or parcel/APN."
+  },
+  "status": {
+    "assigned": "Assigned",
+    "contacted": "Contacted",
+    "dead": "Dead",
+    "new": "New lead",
+    "offer_made": "Offer made",
+    "priorityHigh": "High",
+    "priorityLow": "Low",
+    "priorityMedium": "Medium",
+    "researching": "Researching",
+    "under_contract": "Under contract"
+  },
+  "support": {
+    "responsePromise": "We aim to reply within 2 business days."
+  },
+  "supportForm": {
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "errorEmail": "Please enter a valid email address.",
+    "errorMessageLong": "Please keep your message under 5,000 characters.",
+    "errorMessageShort": "Please describe the issue in a little more detail (10+ characters).",
+    "errorName": "Please enter your name.",
+    "errorSend": "Something went wrong sending your message.",
+    "errorTopic": "Please choose a topic.",
+    "message": "How can we help?",
+    "messagePlaceholder": "Describe what happened, what you expected, and any error message you saw…",
+    "name": "Name",
+    "namePlaceholder": "Jane Doe",
+    "note": "Please don't include passwords or full card numbers — we'll never ask for them.",
+    "send": "Send message",
+    "sending": "Sending…",
+    "sentBody": "{promise} If it's urgent, include “urgent” in a follow-up and we'll prioritize it.",
+    "sentTitle": "Message sent — thank you.",
+    "topic": "Topic",
+    "topics": {
+      "account": "Account & sign-in",
+      "billing": "Billing & subscription",
+      "bug": "Bug report",
+      "contracts": "Contracts",
+      "getting-started": "Getting started",
+      "lead-log": "Lead log",
+      "map-logging": "Map & property logging",
+      "other": "Something else",
+      "research": "Research workflow",
+      "refund": "Refund request",
+      "success-story": "Share your success story"
+    }
+  },
+  "contractPrint": {
+    "reviewGeneric": "Review carefully — have a licensed real-estate attorney in the property's state approve this draft before anyone signs.",
+    "reviewHawaii": "Review carefully — have your Hawaiʻi attorney approve this draft before anyone signs.",
+    "print": "Print",
+    "reviewRequestedNote": "Attorney review requested on {date}."
+  },
+  "authEmail": {
+    "subject": "Sign in to {product}",
+    "greeting": "Hi there,",
+    "body": "Click the link below to sign in to {product}. The link expires in 24 hours and works on any device.",
+    "cta": "Sign in to {product}",
+    "fallback": "Or paste this link into your browser:",
+    "footer": "If you didn't request this email, you can safely ignore it."
+  },
+  "sampleContract": {
+    "bannerTitle": "SAMPLE CONTRACT",
+    "bannerBody": "This is a demonstration of the Violation Scout wholesale assignment template, filled with made-up data. It is not a legal document and not legal advice — every real contract must be reviewed by a licensed attorney before anyone signs it.",
+    "bannerCta": "Start your free trial",
+    "watermark": "Sample",
+    "footerNote": "Sample for illustration only. Real drafts are generated from your own lead data inside the app."
+  },
+  "guides": {
+    "title": "Wholesaling guides",
+    "sub": "Practical, Hawaiʻi-focused explainers on assignment contracts, compliance, violation notices, and seller conversations.",
+    "bannerTitle": "Educational only — not legal advice",
+    "bannerBody": "These guides explain general wholesaling concepts. They are not legal advice and don’t create an attorney-client relationship. Have a licensed Hawaiʻi attorney review your contracts and deals before anyone signs.",
+    "backToGuides": "← All guides",
+    "readMore": "Read guide",
+    "articles": [
+      {
+        "slug": "how-assignment-contracts-work",
+        "title": "How assignment contracts work in Hawaiʻi",
+        "blurb": "The mechanics of wholesaling: getting a property under contract and selling your interest in that contract to a cash buyer.",
+        "intro": "In a wholesale deal you never buy the property yourself. Instead, you put the property under a purchase contract that gives you the right to assign — then you sell your position in that contract to an end buyer for an assignment fee. Here’s how the pieces fit together in Hawaiʻi.",
+        "sections": [
+          {
+            "h": "Find a motivated seller",
+            "p": "Wholesalers look for distressed properties: vacant homes, overgrown lots, visible code violations. The seller’s motivation — not just the discount — is what makes a deal work."
+          },
+          {
+            "h": "Get it under contract — with assignment rights",
+            "p": "You sign a purchase agreement with the seller at a price that leaves room for your fee and the end buyer’s profit. The contract must explicitly allow assignment, and it should disclose that you intend to assign it for a profit."
+          },
+          {
+            "h": "Disclose everything to the seller",
+            "p": "Tell the seller plainly: you are an investor, you intend to assign the contract to another buyer, and you will earn an assignment fee. Surprises at the closing table kill deals and invite legal trouble."
+          },
+          {
+            "h": "Find your end buyer",
+            "p": "Market your contractual interest — not the property itself — to your buyers list. Cash investors buy the contract position from you; the assignment fee is your profit."
+          },
+          {
+            "h": "Close through escrow",
+            "p": "At closing, the end buyer funds the purchase, the seller is paid the contract price, and you receive your assignment fee from the settlement. You never held title."
+          }
+        ]
+      },
+      {
+        "slug": "wholesaling-without-a-license",
+        "title": "Staying compliant wholesaling without a license in Hawaiʻi",
+        "blurb": "The lines that matter: what unlicensed wholesalers can do, what crosses into brokerage, and how to stay on the right side.",
+        "intro": "In Hawaiʻi, as in most states, you can wholesale real estate without a license — but only if you stay inside clear boundaries. The core rule: market your own contractual interest, not someone else’s property.",
+        "sections": [
+          {
+            "h": "Market the contract, not the property",
+            "p": "Once you have an assignable contract, you own an equitable interest in the deal. Advertising that interest is your business. Advertising a property you have no contract on — as if you were its listing agent — is not."
+          },
+          {
+            "h": "Disclose your role in writing",
+            "p": "Your purchase agreement should state that you are an investor who may assign the contract for a profit, with the fee disclosed. Verbal disclosures are forgotten; written ones protect you."
+          },
+          {
+            "h": "Don’t do a broker’s job",
+            "p": "Don’t negotiate purchases for other people, don’t hold yourself out as an agent, and don’t collect commissions. Your compensation is an assignment fee on your own contract — that’s the whole model."
+          },
+          {
+            "h": "Earnest money and equitable interest",
+            "p": "A signed contract with consideration (earnest money, even a modest amount) is what gives you a real, marketable interest. A handshake and a listings link are not a wholesale deal."
+          },
+          {
+            "h": "When in doubt, call an attorney",
+            "p": "Hawaiʻi’s rules have local texture. Before you scale, have a Hawaiʻi real-estate attorney review your contract template and your marketing language. Violation Scout can connect you with one from any contract draft."
+          }
+        ]
+      },
+      {
+        "slug": "reading-a-honolulu-violation-notice",
+        "title": "How to read a Honolulu violation notice",
+        "blurb": "What a Notice of Violation actually tells you — and how investors turn it into a motivated-seller lead.",
+        "intro": "Honolulu’s Department of Planning and Permitting (DPP) issues Notices of Violation (NOVs) when a property breaks county codes. For wholesalers, an NOV is both a distress signal and a due-diligence document. Here’s how to read one.",
+        "sections": [
+          {
+            "h": "The header: who, where, what",
+            "p": "An NOV identifies the property (address and Tax Map Key), the owner of record, and the date of inspection. Confirm the TMK matches the property you’re researching — addresses alone can mislead."
+          },
+          {
+            "h": "The violation description and code section",
+            "p": "The notice cites the specific code section violated (building, zoning, housing, or grading codes) and describes the condition found. Look up the cited section to understand exactly what’s non-compliant."
+          },
+          {
+            "h": "Corrective action and deadline",
+            "p": "The NOV orders specific corrective action by a deadline, often 30 days. Missed deadlines escalate to fines — sometimes per day — which is exactly why owners become motivated sellers."
+          },
+          {
+            "h": "Fines and liens",
+            "p": "Unpaid fines can become liens against the property. Before you contract, verify the current fine balance and lien status — they come off the seller’s proceeds and affect your numbers."
+          },
+          {
+            "h": "Verify, don’t assume",
+            "p": "Notices get resolved, appealed, or superseded. Check the current status with DPP directly (their Data Access and Imaging Branch handles record requests) rather than acting on an old copy."
+          }
+        ]
+      },
+      {
+        "slug": "talking-to-sellers-about-violations",
+        "title": "Talking to sellers about code violations",
+        "blurb": "Violations give you leverage — but only if the conversation stays respectful, honest, and solution-focused.",
+        "intro": "Knocking on a door because the county flagged the property is delicate. The seller may be embarrassed, overwhelmed, or angry. Your job is to be the person with a way out, not another source of pressure.",
+        "sections": [
+          {
+            "h": "Lead with empathy, not the violation",
+            "p": "Start with the homeowner’s situation, not the county’s paperwork. “I buy houses in this neighborhood — are you thinking of selling?” beats “I saw your violation notice.”"
+          },
+          {
+            "h": "Never pose as the government",
+            "p": "Don’t imply you’re from the county, don’t threaten enforcement, and don’t suggest the fines will get worse because of you. That’s coercion, and it poisons deals."
+          },
+          {
+            "h": "Name the problem only to solve it",
+            "p": "When the violation comes up, frame it as something you handle routinely: “I buy as-is, violations and all, and I deal with the county side myself.” Relief is your best closing tool."
+          },
+          {
+            "h": "Price the cure into your offer",
+            "p": "Get a realistic sense of what compliance costs — repairs, permits, fines — and build it into your offer. Sellers respect a buyer whose numbers make sense."
+          },
+          {
+            "h": "Put it in writing, keep it clean",
+            "p": "Every promise goes in the contract: as-is terms, timelines, your assignment disclosure. Then let your attorney review before anyone signs."
+          }
+        ]
+      }
+    ],
+    "ctaTrial": "Start your free trial"
+  }
+}

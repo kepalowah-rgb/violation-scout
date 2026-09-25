@@ -1,0 +1,222 @@
+// Prisma schema for the Driving-for-Dollars SaaS.
+//
+// Auth.js models (User, Account, Session, VerificationToken) are required by
+// the Prisma adapter. App models (Property, ResearchItem, ContractDraft) are
+// all scoped to a user via userId — this is what makes the app multi-tenant.
+//
+// NOTE (Prisma 7): the database connection URL is NOT configured here.
+// It lives in prisma.config.ts (for migrate/generate) and is passed to
+// PrismaClient via a driver adapter in lib/db.ts.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ---------------------------------------------------------------------------
+// Auth.js (NextAuth v5) models — required by @auth/prisma-adapter
+// ---------------------------------------------------------------------------
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime?
+  image         String?
+  accounts      Account[]
+  sessions      Session[]
+
+  // Stripe subscription state — the single source of truth for access.
+  // Updated by the Stripe webhook (see app/api/stripe/webhook/route.ts).
+  stripeCustomerId     String?   @unique
+  stripeSubscriptionId String?   @unique
+  subscriptionStatus   String? // "trialing" | "active" | "past_due" | "canceled" | ...
+  trialEndsAt          DateTime?
+  currentPeriodEnd     DateTime?
+
+  properties Property[]
+  contracts  ContractDraft[]
+
+  // Region settings for the research workflow.
+  // "hawaii" (default) uses the built-in Honolulu presets (RPAD tax records +
+  // DPP HNL Build). "custom" uses the user's own county lookup URLs below.
+  // Changing the region only affects checklists for newly added leads.
+  region               String  @default("hawaii")
+  customAssessorLabel  String?
+  customAssessorUrl    String?
+  customViolationLabel String?
+  customViolationUrl   String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Account {
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([provider, providerAccountId])
+}
+
+model Session {
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model VerificationToken {
+  identifier String
+  token      String
+  expires    DateTime
+
+  @@id([identifier, token])
+}
+
+// ---------------------------------------------------------------------------
+// App models — every row belongs to exactly one user (multi-tenancy)
+// ---------------------------------------------------------------------------
+
+model Property {
+  id      String @id @default(cuid())
+  userId  String
+  user    User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  address             String
+  city                String   @default("Nanakuli")
+  zip                 String?
+  tmk                 String? // Tax Map Key, e.g. 1-8-7-028-015-0000
+  lat                 Float?
+  lng                 Float?
+  distressNotes       String? // what the driver saw in the field
+  suspectedViolations String? // unverified — kept separate from confirmed findings
+  ownerName           String? // filled in during research, never auto-scraped
+
+  // status: new | researching | contacted | offer_made | under_contract | assigned | dead
+  status   String @default("new")
+  // priority: low | medium | high
+  priority String @default("medium")
+
+  followUpDate DateTime?
+
+  researchItems ResearchItem[]
+  contracts     ContractDraft[]
+
+  // Remote evaluation: virtual tour link, uploaded photos (Vercel Blob),
+  // and a persisted remote condition checklist.
+  virtualTourUrl  String?
+  photos          PropertyPhoto[]
+  conditionItems  ConditionItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+}
+
+// ---------------------------------------------------------------------------
+// Remote evaluation — photos + condition checklist per property.
+// Photos are stored as Vercel Blob URLs; only metadata lives here.
+// ---------------------------------------------------------------------------
+
+model PropertyPhoto {
+  id         String   @id @default(cuid())
+  propertyId String
+  property   Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+
+  /** Public Vercel Blob URL of the uploaded image. */
+  url       String
+  caption   String?
+  mimeType  String?
+  sizeBytes Int?
+
+  createdAt DateTime @default(now())
+
+  @@index([propertyId])
+}
+
+model ConditionItem {
+  id         String   @id @default(cuid())
+  propertyId String
+  property   Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+
+  /** Stable key: roof | walls | windows | doors | yard | structural | vacancy | utilities.
+   * Display labels are translated in the UI (messages: "remote.items.<key>"). */
+  itemKey String
+  /** unchecked | good | fair | poor */
+  status  String  @default("unchecked")
+  notes   String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([propertyId, itemKey])
+  @@index([propertyId])
+}
+
+model ResearchItem {
+  id         String   @id @default(cuid())
+  propertyId String
+  property   Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+
+  label     String // e.g. "Find owner via Honolulu RPAD tax records"
+  status    String  @default("todo") // todo | in_progress | done
+  notes     String? // confirmed findings go here, with dates
+  sourceUrl String? // the public lookup page used
+  sortOrder Int     @default(0)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([propertyId])
+}
+
+model ContractDraft {
+  id         String    @id @default(cuid())
+  userId     String
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  propertyId String?
+  property   Property? @relation(fields: [propertyId], references: [id], onDelete: SetNull)
+
+  sellerName      String
+  propertyAddress String
+  tmk             String?
+  purchasePrice   Float // dollars
+  earnestMoney    Float   @default(0)
+  assignmentFee   Float   @default(0) // disclosed wholesaling fee
+  closingDate     DateTime?
+  inspectionDays  Int     @default(10)
+  additionalTerms String?
+
+  // "hawaii" (default) | "generic" — which legal template the draft renders with.
+  template String @default("hawaii")
+
+  // When the subscriber asked the configured attorney to review this draft
+  // (via /api/contracts/[id]/request-review). Null = never requested.
+  reviewRequestedAt DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+}
